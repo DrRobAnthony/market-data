@@ -1,7 +1,14 @@
 {
-  "updated_utc": "2026-08-23 17:24:27",
-  "ok": 27,
-  "total": 27,
-  "failed": [],
-  "signals_found": 0
+  "updated_utc": "2026-08-23 18:21:53",
+  "ok": 177,
+  "total": 183,
+  "failed": [
+    "HYPE",
+    "KLED",
+    "NEST",
+    "KNTQ",
+    "BNKR",
+    "SERV"
+  ],
+  "signals_found": 6
 }
