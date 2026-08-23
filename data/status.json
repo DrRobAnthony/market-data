@@ -1,6 +1,7 @@
 {
-  "updated_utc": "2026-08-23 17:06:34",
+  "updated_utc": "2026-08-23 17:24:27",
   "ok": 27,
   "total": 27,
-  "failed": []
+  "failed": [],
+  "signals_found": 0
 }
