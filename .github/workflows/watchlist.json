@@ -1,1 +1,8 @@
-
+{
+  "stocks": [
+    "SPY", "QQQ", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META",
+    "TSLA", "AMD", "NFLX", "AVGO", "JPM", "V", "MA", "XOM",
+    "UNH", "LLY", "COST", "WMT"
+  ],
+  "cryptos": ["BTC", "ETH", "SOL", "XRP", "ADA", "DOGE", "LINK"]
+}
