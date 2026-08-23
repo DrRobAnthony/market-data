@@ -40,7 +40,7 @@ KRAKEN_PAIRS = {"BTC": "XBTUSD", "ETH": "ETHUSD", "SOL": "SOLUSD",
                 "LINK": "LINKUSD"}
 
 PARAMS = {"ema_fast": 50, "ema_slow": 200, "atr_n": 14, "breakout_n": 55,
-          "sl_atr": 3.0, "tp_atr": 6.0, "rsi_max_long": 80,
+          "sl_atr": 3.0, "tp_atr": 7.5, "rsi_max_long": 80,
           "rsi_min_short": 20}
 
 
