@@ -1,8 +1,10 @@
 {
-  "updated_utc": "2026-08-24 02:28:36",
-  "ok": 177,
+  "updated_utc": "2026-08-25 02:24:49",
+  "ok": 175,
   "total": 183,
   "failed": [
+    "TMO",
+    "DHR",
     "HYPE",
     "KLED",
     "NEST",
@@ -10,5 +12,5 @@
     "BNKR",
     "SERV"
   ],
-  "signals_found": 6
+  "signals_found": 9
 }
