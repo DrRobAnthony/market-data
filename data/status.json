@@ -1,12 +1,8 @@
 {
-  "updated_utc": "2026-08-26 02:30:26",
-  "ok": 173,
+  "updated_utc": "2026-08-27 10:31:54",
+  "ok": 177,
   "total": 183,
   "failed": [
-    "DE",
-    "FDX",
-    "GM",
-    "RCL",
     "HYPE",
     "KLED",
     "NEST",
@@ -14,5 +10,5 @@
     "BNKR",
     "SERV"
   ],
-  "signals_found": 7
+  "signals_found": 0
 }
