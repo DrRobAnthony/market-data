@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-08-27 10:31:54",
+  "updated_utc": "2026-08-28 12:23:44",
   "ok": 177,
   "total": 183,
   "failed": [
@@ -10,5 +10,5 @@
     "BNKR",
     "SERV"
   ],
-  "signals_found": 0
+  "signals_found": 4
 }
