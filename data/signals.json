@@ -1,5 +1,40 @@
 {
-  "scanned_utc": "2026-08-29 07:39:23",
+  "scanned_utc": "2026-08-30 10:44:58",
   "strategy": "daily trend-breakout v1",
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 513.53,
+      "sl": 477.376609,
+      "tp": 603.913478,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-08-28",
+      "atr": 12.05113,
+      "rsi": 73.5,
+      "risk_pct": 7.04,
+      "reward_pct": 17.6,
+      "mc30_p5": 447.3276,
+      "mc30_p50": 519.2537,
+      "mc30_p95": 617.8733,
+      "symbol": "MSFT",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 57.33,
+      "sl": 52.225905,
+      "tp": 70.090237,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-08-28",
+      "atr": 1.701365,
+      "rsi": 70.9,
+      "risk_pct": 8.9,
+      "reward_pct": 22.26,
+      "mc30_p5": 47.4792,
+      "mc30_p50": 58.3915,
+      "mc30_p95": 71.4016,
+      "symbol": "SLB",
+      "asset_class": "stock"
+    }
+  ]
 }
