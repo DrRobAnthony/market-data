@@ -2,7 +2,12 @@ name: Update market data
 
 on:
   schedule:
-    - cron: "35 0 * * *"
+    # Three attempts nightly — GitHub's scheduler can run hours late or skip
+    # a slot entirely, so we give it three chances. Re-runs are harmless:
+    # the script is idempotent and the email step only sends new signals.
+    - cron: "47 0 * * *"
+    - cron: "47 2 * * *"
+    - cron: "47 4 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -11,6 +16,10 @@ permissions:
 concurrency:
   group: update-data
   cancel-in-progress: false
+
+env:
+  MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+  MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
 
 jobs:
   fetch:
@@ -22,8 +31,48 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch market data
+      - name: Fetch market data and scan
         run: python fetch_data.py
+
+      - name: Prepare fallback email (dedupe against previously emailed)
+        id: mail_prep
+        run: |
+          python - <<'EOF'
+          import json, os, html
+          from pathlib import Path
+          sig = json.loads(Path("data/signals.json").read_text())
+          sent_path = Path("data/emailed.json")
+          sent = json.loads(sent_path.read_text()) if sent_path.exists() else []
+          sent_keys = set(sent)
+          new = [s for s in sig.get("signals", [])
+                 if f"{s['symbol']}|{s['date']}" not in sent_keys]
+          if new:
+              parts = ["<div style='font-family:Arial,sans-serif;max-width:640px'>",
+                       f"<h2>Trade Signals — {len(new)} new setup(s)</h2>"]
+              for s in new:
+                  parts.append(
+                      "<div style='border:1px solid #ccc;border-radius:8px;"
+                      "padding:12px;margin:10px 0'>"
+                      f"<b>{s['symbol']} — {s['side'].upper()}</b> ({s['date']})<br>"
+                      f"Entry ${s['entry']} | Stop-loss ${s['sl']} "
+                      f"(-{s['risk_pct']}%) | Take-profit ${s['tp']} "
+                      f"(+{s['reward_pct']}%, 1:2.5 R:R)<br>"
+                      f"RSI {s['rsi']} | 30-day range ${s['mc30_p5']} – "
+                      f"${s['mc30_p95']} (median ${s['mc30_p50']})<br>"
+                      f"<i>{html.escape(s['thesis'])}</i></div>")
+              parts.append("<p style='color:#777;font-size:13px'>Strategy: daily "
+                           "trend-breakout, long-only, validated out-of-sample "
+                           "2022–2026 (46% win rate, PF 1.49). Signals are "
+                           "information, not orders. Not financial advice.<br>"
+                           "Sent directly by your GitHub data engine.</p></div>")
+              Path("email_body.html").write_text("".join(parts))
+              sent += [f"{s['symbol']}|{s['date']}" for s in new]
+              sent_path.write_text(json.dumps(sent[-300:]))
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"has_new={'true' if new else 'false'}\n")
+              f.write(f"count={len(new)}\n")
+          print(f"new signals for fallback email: {len(new)}")
+          EOF
 
       - name: Commit and push
         run: |
@@ -33,3 +82,17 @@ jobs:
           git diff --cached --quiet && echo "No changes." && exit 0
           git commit -m "Data update $(date -u +%F)"
           git push
+
+      - name: Send fallback email (dormant until MAIL secrets are set)
+        if: env.MAIL_USERNAME != '' && steps.mail_prep.outputs.has_new == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Trade Signals — ${{ steps.mail_prep.outputs.count }} new setup(s) [GitHub direct]"
+          to: rob@drrobanthony.com
+          from: "Market Scanner <rob@drrobanthony.com>"
+          html_body: file://email_body.html
