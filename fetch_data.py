@@ -55,7 +55,13 @@ def http_get(url, timeout=60, retries=3):
                 return r.read()
         except Exception as e:
             last = e
-            time.sleep(3 * (attempt + 1))
+            # A 429 (rate-limited) or 403 (blocked) means hammering it again
+            # in 3-6 seconds won't help — back off much longer instead.
+            msg = str(e)
+            if "429" in msg or "403" in msg:
+                time.sleep(20 * (attempt + 1))
+            else:
+                time.sleep(3 * (attempt + 1))
     raise RuntimeError(f"GET failed after {retries} tries: {url} ({last})")
 
 
@@ -140,15 +146,24 @@ def crypto_kraken(symbol):
 def try_sources(symbol, sources, min_rows=100):
     errors = []
     for name, fn in sources:
-        try:
-            rows = validate(fn(symbol), min_rows)
-            print(f"  source: {name}")
-            write_csv(symbol, rows)
-            return True
-        except Exception as e:
-            errors.append(f"{name}: {e}")
-    print(f"  FAILED all sources: {' | '.join(errors)}")
-    return False
+        # Retry each source once after a longer cooldown before giving up on
+        # it and moving to the next source — helps with transient rate
+        # limiting without masking a genuinely broken/blocked source.
+        for attempt in range(2):
+            try:
+                rows = validate(fn(symbol), min_rows)
+                print(f"  source: {name}")
+                write_csv(symbol, rows)
+                return True, None
+            except Exception as e:
+                err = f"{name}: {e}"
+                if attempt == 0:
+                    time.sleep(8)
+                else:
+                    errors.append(err)
+    reason = " | ".join(errors)
+    print(f"  FAILED all sources: {reason}")
+    return False, reason[:300]
 
 
 # ---------------- signal scanner (pure python, validated) ----------------
@@ -237,6 +252,7 @@ def scan_symbol(rows, p=PARAMS):
 def main():
     wl = json.loads(Path("watchlist.json").read_text())
     failures = []
+    fail_reasons = {}
     signals = []
     for group, syms, sources, min_rows in [
         ("stock", wl.get("stocks", []),
@@ -247,8 +263,10 @@ def main():
     ]:
         for sym in syms:
             print(f"[{group}] {sym}")
-            if not try_sources(sym, sources, min_rows):
+            ok, reason = try_sources(sym, sources, min_rows)
+            if not ok:
                 failures.append(sym)
+                fail_reasons[sym] = reason
             else:
                 rows = []
                 with (DATA / f"{sym}.csv").open() as f:
@@ -270,7 +288,8 @@ def main():
     now = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
     Path("data/status.json").write_text(json.dumps(
         {"updated_utc": now, "ok": total - len(failures), "total": total,
-         "failed": failures, "signals_found": len(signals)}, indent=2))
+         "failed": failures, "fail_reasons": fail_reasons,
+         "signals_found": len(signals)}, indent=2))
     Path("data/signals.json").write_text(json.dumps(
         {"scanned_utc": now, "strategy": "daily trend-breakout v1",
          "signals": signals}, indent=2))
