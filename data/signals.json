@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-08-30 10:44:58",
+  "scanned_utc": "2026-08-31 06:53:32",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 73.5,
       "risk_pct": 7.04,
       "reward_pct": 17.6,
-      "mc30_p5": 447.3276,
-      "mc30_p50": 519.2537,
-      "mc30_p95": 617.8733,
+      "mc30_p5": 447.328,
+      "mc30_p50": 519.254,
+      "mc30_p95": 617.8727,
       "symbol": "MSFT",
       "asset_class": "stock"
     },
@@ -30,7 +30,7 @@
       "rsi": 70.9,
       "risk_pct": 8.9,
       "reward_pct": 22.26,
-      "mc30_p5": 47.4792,
+      "mc30_p5": 47.4791,
       "mc30_p50": 58.3915,
       "mc30_p95": 71.4016,
       "symbol": "SLB",

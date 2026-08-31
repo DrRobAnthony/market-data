@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-08-30 10:44:58",
+  "updated_utc": "2026-08-31 06:53:32",
   "ok": 177,
   "total": 183,
   "failed": [
@@ -11,11 +11,11 @@
     "SERV"
   ],
   "fail_reasons": {
-    "HYPE": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=HYPE&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 215",
+    "HYPE": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=HYPE&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 216",
     "KLED": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KLED&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']",
     "NEST": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=NEST&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Invalid asset pair']",
-    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 96",
-    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 33",
+    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 97",
+    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 34",
     "SERV": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=SERV&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']"
   },
   "signals_found": 2
