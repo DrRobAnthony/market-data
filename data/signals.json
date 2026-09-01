@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-01 08:35:29",
+  "scanned_utc": "2026-09-01 10:13:50",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 76.5,
       "risk_pct": 9.0,
       "reward_pct": 22.51,
-      "mc30_p5": 50.7174,
-      "mc30_p50": 61.6801,
-      "mc30_p95": 76.0403,
+      "mc30_p5": 50.7175,
+      "mc30_p50": 61.6803,
+      "mc30_p95": 76.0404,
       "symbol": "SLB",
       "asset_class": "stock"
     },
@@ -38,18 +38,18 @@
     },
     {
       "side": "long",
-      "entry": 5.8179,
-      "sl": 4.661702,
-      "tp": 8.708395,
+      "entry": 5.6942,
+      "sl": 4.538002,
+      "tp": 8.584695,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-01",
       "atr": 0.385399,
-      "rsi": 78.1,
-      "risk_pct": 19.87,
-      "reward_pct": 49.68,
-      "mc30_p5": 3.7167,
-      "mc30_p50": 5.7776,
-      "mc30_p95": 9.6374,
+      "rsi": 77.1,
+      "risk_pct": 20.3,
+      "reward_pct": 50.76,
+      "mc30_p5": 3.6337,
+      "mc30_p50": 5.6473,
+      "mc30_p95": 9.4189,
       "symbol": "UNI",
       "asset_class": "crypto"
     }
