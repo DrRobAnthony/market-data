@@ -1,11 +1,9 @@
 {
-  "updated_utc": "2026-09-02 05:45:43",
-  "ok": 174,
+  "updated_utc": "2026-09-02 07:57:03",
+  "ok": 176,
   "total": 183,
   "failed": [
     "APH",
-    "TMUS",
-    "NEE",
     "HYPE",
     "KLED",
     "NEST",
@@ -15,8 +13,6 @@
   ],
   "fail_reasons": {
     "APH": "yfinance: bad OHLC on 2026-09-01: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
-    "TMUS": "yfinance: bad OHLC on 2026-08-28: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
-    "NEE": "yfinance: bad OHLC on 2026-08-28: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
     "HYPE": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=HYPE&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 218",
     "KLED": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KLED&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']",
     "NEST": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=NEST&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Invalid asset pair']",
