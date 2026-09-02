@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-02 07:57:03",
+  "scanned_utc": "2026-09-02 09:42:49",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -30,9 +30,9 @@
       "rsi": 71.6,
       "risk_pct": 5.83,
       "reward_pct": 14.58,
-      "mc30_p5": 188.5666,
-      "mc30_p50": 216.6836,
-      "mc30_p95": 246.7391,
+      "mc30_p5": 188.5667,
+      "mc30_p50": 216.6841,
+      "mc30_p95": 246.7387,
       "symbol": "CVX",
       "asset_class": "stock"
     },
@@ -48,8 +48,8 @@
       "risk_pct": 6.89,
       "reward_pct": 17.22,
       "mc30_p5": 114.8814,
-      "mc30_p50": 138.2405,
-      "mc30_p95": 165.5411,
+      "mc30_p50": 138.2402,
+      "mc30_p95": 165.5404,
       "symbol": "COP",
       "asset_class": "stock"
     },
@@ -66,7 +66,7 @@
       "reward_pct": 19.05,
       "mc30_p5": 134.0353,
       "mc30_p50": 156.1579,
-      "mc30_p95": 182.1606,
+      "mc30_p95": 182.1605,
       "symbol": "GILD",
       "asset_class": "stock"
     },
@@ -81,9 +81,9 @@
       "rsi": 66.2,
       "risk_pct": 9.0,
       "reward_pct": 22.51,
-      "mc30_p5": 592.7009,
+      "mc30_p5": 592.7005,
       "mc30_p50": 697.2328,
-      "mc30_p95": 833.3775,
+      "mc30_p95": 833.3772,
       "symbol": "DE",
       "asset_class": "stock"
     }
