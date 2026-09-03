@@ -1,9 +1,8 @@
 {
-  "updated_utc": "2026-09-02 09:42:49",
-  "ok": 176,
+  "updated_utc": "2026-09-03 05:47:47",
+  "ok": 177,
   "total": 183,
   "failed": [
-    "APH",
     "HYPE",
     "KLED",
     "NEST",
@@ -12,12 +11,11 @@
     "SERV"
   ],
   "fail_reasons": {
-    "APH": "yfinance: bad OHLC on 2026-09-01: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
-    "HYPE": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=HYPE&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 218",
+    "HYPE": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=HYPE&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 219",
     "KLED": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KLED&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']",
     "NEST": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=NEST&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Invalid asset pair']",
-    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 99",
-    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 36",
+    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 100",
+    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: too few rows: 37",
     "SERV": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=SERV&tsym=USD&allData=true (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']"
   },
   "signals_found": 5
