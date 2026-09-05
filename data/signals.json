@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-05 05:35:46",
+  "scanned_utc": "2026-09-05 07:44:10",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -35,6 +35,23 @@
       "mc30_p95": 40.4714,
       "symbol": "HPQ",
       "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 2.2513,
+      "sl": 1.824098,
+      "tp": 3.319305,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-05",
+      "atr": 0.142401,
+      "rsi": 70.6,
+      "risk_pct": 18.98,
+      "reward_pct": 47.44,
+      "mc30_p5": 1.461,
+      "mc30_p50": 2.2437,
+      "mc30_p95": 3.5683,
+      "symbol": "NEAR",
+      "asset_class": "crypto"
     }
   ]
 }
