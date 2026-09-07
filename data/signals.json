@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-06 09:33:41",
+  "scanned_utc": "2026-09-07 05:53:46",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -15,7 +15,7 @@
       "reward_pct": 7.31,
       "mc30_p5": 32.5175,
       "mc30_p50": 35.8579,
-      "mc30_p95": 39.5852,
+      "mc30_p95": 39.5854,
       "symbol": "EWS",
       "asset_class": "stock"
     },
@@ -32,26 +32,9 @@
       "reward_pct": 32.41,
       "mc30_p5": 26.0661,
       "mc30_p50": 32.6031,
-      "mc30_p95": 40.4715,
+      "mc30_p95": 40.4714,
       "symbol": "HPQ",
       "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 2.3755,
-      "sl": 1.931457,
-      "tp": 3.485608,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-09-06",
-      "atr": 0.148014,
-      "rsi": 74.3,
-      "risk_pct": 18.69,
-      "reward_pct": 46.73,
-      "mc30_p5": 1.4922,
-      "mc30_p50": 2.3607,
-      "mc30_p95": 3.7116,
-      "symbol": "NEAR",
-      "asset_class": "crypto"
     }
   ]
 }
