@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-08 05:57:06",
+  "scanned_utc": "2026-09-08 08:02:55",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -15,7 +15,7 @@
       "reward_pct": 7.31,
       "mc30_p5": 32.5175,
       "mc30_p50": 35.8579,
-      "mc30_p95": 39.5854,
+      "mc30_p95": 39.5852,
       "symbol": "EWS",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 66.4,
       "risk_pct": 12.96,
       "reward_pct": 32.41,
-      "mc30_p5": 26.0663,
-      "mc30_p50": 32.6028,
-      "mc30_p95": 40.4715,
+      "mc30_p5": 26.0661,
+      "mc30_p50": 32.6032,
+      "mc30_p95": 40.4714,
       "symbol": "HPQ",
       "asset_class": "stock"
     }
