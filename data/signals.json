@@ -1,5 +1,23 @@
 {
-  "scanned_utc": "2026-09-09 09:49:56",
+  "scanned_utc": "2026-09-10 05:58:47",
   "strategy": "daily trend-breakout v1",
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 213.81,
+      "sl": 201.546798,
+      "tp": 244.468004,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-09",
+      "atr": 4.087734,
+      "rsi": 70.6,
+      "risk_pct": 5.74,
+      "reward_pct": 14.34,
+      "mc30_p5": 191.9104,
+      "mc30_p50": 220.5405,
+      "mc30_p95": 250.7784,
+      "symbol": "CVX",
+      "asset_class": "stock"
+    }
+  ]
 }
