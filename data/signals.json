@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-10 08:07:54",
+  "scanned_utc": "2026-09-10 09:49:38",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 70.6,
       "risk_pct": 5.74,
       "reward_pct": 14.34,
-      "mc30_p5": 191.9103,
-      "mc30_p50": 220.5402,
-      "mc30_p95": 250.7787,
+      "mc30_p5": 191.9104,
+      "mc30_p50": 220.5406,
+      "mc30_p95": 250.778,
       "symbol": "CVX",
       "asset_class": "stock"
     }
