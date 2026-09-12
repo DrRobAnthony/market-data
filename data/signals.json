@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-12 07:58:07",
+  "scanned_utc": "2026-09-12 09:28:53",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,8 +13,8 @@
       "rsi": 66.6,
       "risk_pct": 17.64,
       "reward_pct": 44.09,
-      "mc30_p5": 441.4313,
-      "mc30_p50": 619.8292,
+      "mc30_p5": 441.432,
+      "mc30_p50": 619.8291,
       "mc30_p95": 907.1933,
       "symbol": "DELL",
       "asset_class": "stock"
@@ -32,24 +32,24 @@
       "reward_pct": 34.03,
       "mc30_p5": 28.5091,
       "mc30_p50": 35.6938,
-      "mc30_p95": 45.1768,
+      "mc30_p95": 45.1766,
       "symbol": "HPQ",
       "asset_class": "stock"
     },
     {
       "side": "long",
-      "entry": 0.7309,
-      "sl": 0.564465,
-      "tp": 1.146989,
+      "entry": 0.7431,
+      "sl": 0.573643,
+      "tp": 1.166742,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-12",
-      "atr": 0.055478,
-      "rsi": 76.7,
-      "risk_pct": 22.77,
-      "reward_pct": 56.93,
-      "mc30_p5": 0.4218,
-      "mc30_p50": 0.7289,
-      "mc30_p95": 1.3191,
+      "atr": 0.056486,
+      "rsi": 77.6,
+      "risk_pct": 22.8,
+      "reward_pct": 57.01,
+      "mc30_p5": 0.4288,
+      "mc30_p50": 0.7419,
+      "mc30_p95": 1.3434,
       "symbol": "ETHFI",
       "asset_class": "crypto"
     }
