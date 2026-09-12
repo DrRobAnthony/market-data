@@ -1,5 +1,40 @@
 {
-  "scanned_utc": "2026-09-11 09:47:27",
+  "scanned_utc": "2026-09-12 05:46:11",
   "strategy": "daily trend-breakout v1",
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 567.29,
+      "sl": 467.244997,
+      "tp": 817.402508,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-11",
+      "atr": 33.348334,
+      "rsi": 66.6,
+      "risk_pct": 17.64,
+      "reward_pct": 44.09,
+      "mc30_p5": 441.4314,
+      "mc30_p50": 619.8301,
+      "mc30_p95": 907.1934,
+      "symbol": "DELL",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 35.48,
+      "sl": 30.650111,
+      "tp": 47.554722,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-11",
+      "atr": 1.609963,
+      "rsi": 71.8,
+      "risk_pct": 13.61,
+      "reward_pct": 34.03,
+      "mc30_p5": 28.5091,
+      "mc30_p50": 35.6939,
+      "mc30_p95": 45.1769,
+      "symbol": "HPQ",
+      "asset_class": "stock"
+    }
+  ]
 }
