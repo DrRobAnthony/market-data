@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-13 06:01:52",
+  "scanned_utc": "2026-09-13 08:16:44",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 66.6,
       "risk_pct": 8.82,
       "reward_pct": 22.04,
-      "mc30_p5": 441.4317,
-      "mc30_p50": 619.8301,
-      "mc30_p95": 907.194,
+      "mc30_p5": 441.4314,
+      "mc30_p50": 619.8302,
+      "mc30_p95": 907.195,
       "symbol": "DELL",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 71.8,
       "risk_pct": 6.81,
       "reward_pct": 17.02,
-      "mc30_p5": 28.5091,
+      "mc30_p5": 28.5092,
       "mc30_p50": 35.6938,
-      "mc30_p95": 45.1769,
+      "mc30_p95": 45.1768,
       "symbol": "HPQ",
       "asset_class": "stock"
     }
