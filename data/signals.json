@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-15 08:38:49",
+  "scanned_utc": "2026-09-15 10:14:06",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -30,9 +30,9 @@
       "rsi": 67.4,
       "risk_pct": 2.71,
       "reward_pct": 6.78,
-      "mc30_p5": 45.983,
-      "mc30_p50": 52.031,
-      "mc30_p95": 59.1945,
+      "mc30_p5": 45.9831,
+      "mc30_p50": 52.0309,
+      "mc30_p95": 59.1944,
       "symbol": "VZ",
       "asset_class": "stock"
     },
