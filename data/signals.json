@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-17 06:07:29",
+  "scanned_utc": "2026-09-17 08:36:22",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,11 +13,28 @@
       "rsi": 69.4,
       "risk_pct": 3.68,
       "reward_pct": 9.19,
-      "mc30_p5": 549.3572,
-      "mc30_p50": 650.6278,
-      "mc30_p95": 774.6312,
+      "mc30_p5": 549.3581,
+      "mc30_p50": 650.6284,
+      "mc30_p95": 774.632,
       "symbol": "TMO",
       "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 1384.92,
+      "sl": 1217.439631,
+      "tp": 1803.620923,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-17",
+      "atr": 111.653579,
+      "rsi": 69.9,
+      "risk_pct": 12.09,
+      "reward_pct": 30.23,
+      "mc30_p5": 897.8945,
+      "mc30_p50": 1708.9571,
+      "mc30_p95": 3382.3087,
+      "symbol": "ZEC",
+      "asset_class": "crypto"
     }
   ]
 }
