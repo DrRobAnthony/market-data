@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-18 08:14:35",
+  "scanned_utc": "2026-09-18 09:51:34",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 66.4,
       "risk_pct": 8.59,
       "reward_pct": 21.46,
-      "mc30_p5": 463.0242,
-      "mc30_p50": 654.8942,
-      "mc30_p95": 927.9182,
+      "mc30_p5": 463.0238,
+      "mc30_p50": 654.8931,
+      "mc30_p95": 927.919,
       "symbol": "DELL",
       "asset_class": "stock"
     },
@@ -30,8 +30,8 @@
       "rsi": 72.1,
       "risk_pct": 3.61,
       "reward_pct": 9.02,
-      "mc30_p5": 554.8939,
-      "mc30_p50": 661.5913,
+      "mc30_p5": 554.894,
+      "mc30_p50": 661.5915,
       "mc30_p95": 791.1589,
       "symbol": "TMO",
       "asset_class": "stock"
@@ -55,36 +55,19 @@
     },
     {
       "side": "long",
-      "entry": 8.7366,
-      "sl": 7.745926,
-      "tp": 11.213285,
+      "entry": 8.9921,
+      "sl": 7.988387,
+      "tp": 11.501384,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-18",
-      "atr": 0.660449,
-      "rsi": 77.2,
-      "risk_pct": 11.34,
-      "reward_pct": 28.35,
-      "mc30_p5": 5.7684,
-      "mc30_p50": 8.9634,
-      "mc30_p95": 14.5281,
+      "atr": 0.669142,
+      "rsi": 78.3,
+      "risk_pct": 11.16,
+      "reward_pct": 27.91,
+      "mc30_p5": 5.9593,
+      "mc30_p50": 9.2437,
+      "mc30_p95": 15.0226,
       "symbol": "UNI",
-      "asset_class": "crypto"
-    },
-    {
-      "side": "long",
-      "entry": 2.546,
-      "sl": 2.283227,
-      "tp": 3.202932,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-09-18",
-      "atr": 0.175182,
-      "rsi": 71.4,
-      "risk_pct": 10.32,
-      "reward_pct": 25.8,
-      "mc30_p5": 1.596,
-      "mc30_p50": 2.505,
-      "mc30_p95": 4.0218,
-      "symbol": "PENDLE",
       "asset_class": "crypto"
     }
   ]
