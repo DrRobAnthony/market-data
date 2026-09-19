@@ -1,5 +1,23 @@
 {
-  "scanned_utc": "2026-09-19 05:47:39",
+  "scanned_utc": "2026-09-19 08:08:51",
   "strategy": "daily trend-breakout v1",
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 7.665,
+      "sl": 6.801488,
+      "tp": 9.82378,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-19",
+      "atr": 0.575675,
+      "rsi": 71.5,
+      "risk_pct": 11.27,
+      "reward_pct": 28.16,
+      "mc30_p5": 4.7363,
+      "mc30_p50": 7.5552,
+      "mc30_p95": 12.0107,
+      "symbol": "INJ",
+      "asset_class": "crypto"
+    }
+  ]
 }
