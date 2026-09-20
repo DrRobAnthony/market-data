@@ -117,7 +117,7 @@ def crypto_cryptocompare(symbol):
     url = ("https://min-api.cryptocompare.com/data/v2/histoday"
            f"?fsym={symbol}&tsym=USD&allData=true&api_key={api_key}")
     js = json.loads(http_get(url))
-          if js.get("Response") != "Success":
+    if js.get("Response") != "Success":
         raise RuntimeError(f"cryptocompare error: {js.get('Message')}")
     rows = []
     for d in js["Data"]["Data"]:
