@@ -12,6 +12,7 @@ Strategy: daily-bar Donchian breakout with EMA50/200 trend filter,
 ATR(14)-based levels (SL 3.0x, TP 6.0x). Out-of-sample validated.
 """
 import csv
+import os
 import io
 import json
 import random
@@ -111,10 +112,11 @@ def stock_stooq(symbol):
             continue
     return rows
 
-
 def crypto_cryptocompare(symbol):
+    api_key = os.environ.get("CRYPTOCOMPARE_API_KEY", "")
     url = ("https://min-api.cryptocompare.com/data/v2/histoday"
-           f"?fsym={symbol}&tsym=USD&allData=true")
+           f"?fsym={symbol}&tsym=USD&allData=true&api_key={api_key}")
+    js = json.loads(http_get(url))
     js = json.loads(http_get(url))
     if js.get("Response") != "Success":
         raise RuntimeError(f"cryptocompare error: {js.get('Message')}")
