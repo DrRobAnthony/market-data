@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-22 06:03:58",
+  "scanned_utc": "2026-09-22 08:34:16",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 66.0,
       "risk_pct": 2.07,
       "reward_pct": 5.17,
-      "mc30_p5": 672.9447,
-      "mc30_p50": 761.1535,
-      "mc30_p95": 864.9062,
+      "mc30_p5": 672.9444,
+      "mc30_p50": 761.1539,
+      "mc30_p95": 864.9059,
       "symbol": "QQQ",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 65.5,
       "risk_pct": 2.76,
       "reward_pct": 6.91,
-      "mc30_p5": 173.7089,
-      "mc30_p50": 201.2925,
-      "mc30_p95": 235.6875,
+      "mc30_p5": 173.7091,
+      "mc30_p50": 201.2926,
+      "mc30_p95": 235.6877,
       "symbol": "XLK",
       "asset_class": "stock"
     },
