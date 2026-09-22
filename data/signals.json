@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-22 08:34:16",
+  "scanned_utc": "2026-09-22 10:06:36",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 66.0,
       "risk_pct": 2.07,
       "reward_pct": 5.17,
-      "mc30_p5": 672.9444,
-      "mc30_p50": 761.1539,
-      "mc30_p95": 864.9059,
+      "mc30_p5": 672.9445,
+      "mc30_p50": 761.1535,
+      "mc30_p95": 864.9063,
       "symbol": "QQQ",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 65.5,
       "risk_pct": 2.76,
       "reward_pct": 6.91,
-      "mc30_p5": 173.7091,
+      "mc30_p5": 173.7089,
       "mc30_p50": 201.2926,
-      "mc30_p95": 235.6877,
+      "mc30_p95": 235.6873,
       "symbol": "XLK",
       "asset_class": "stock"
     },
@@ -69,6 +69,23 @@
       "mc30_p95": 543.1585,
       "symbol": "NET",
       "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 0.711,
+      "sl": 0.639259,
+      "tp": 0.890353,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-09-22",
+      "atr": 0.047828,
+      "rsi": 72.9,
+      "risk_pct": 10.09,
+      "reward_pct": 25.23,
+      "mc30_p5": 0.4186,
+      "mc30_p50": 0.7157,
+      "mc30_p95": 1.2054,
+      "symbol": "AERO",
+      "asset_class": "crypto"
     }
   ]
 }
