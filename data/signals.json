@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-24 08:26:45",
+  "scanned_utc": "2026-09-24 10:11:59",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,8 +13,8 @@
       "rsi": 66.1,
       "risk_pct": 2.72,
       "reward_pct": 6.79,
-      "mc30_p5": 173.8447,
-      "mc30_p50": 202.2372,
+      "mc30_p5": 173.845,
+      "mc30_p50": 202.2373,
       "mc30_p95": 234.6254,
       "symbol": "XLK",
       "asset_class": "stock"
@@ -39,7 +39,7 @@
     {
       "side": "long",
       "entry": 665.3,
-      "sl": 642.240511,
+      "sl": 642.24051,
       "tp": 722.948724,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-23",
@@ -47,9 +47,9 @@
       "rsi": 71.6,
       "risk_pct": 3.47,
       "reward_pct": 8.67,
-      "mc30_p5": 561.0113,
-      "mc30_p50": 668.5941,
-      "mc30_p95": 800.7115,
+      "mc30_p5": 561.0109,
+      "mc30_p50": 668.5946,
+      "mc30_p95": 800.7108,
       "symbol": "TMO",
       "asset_class": "stock"
     },
@@ -65,8 +65,8 @@
       "risk_pct": 4.03,
       "reward_pct": 10.07,
       "mc30_p5": 181.6289,
-      "mc30_p50": 219.1634,
-      "mc30_p95": 262.2646,
+      "mc30_p50": 219.1636,
+      "mc30_p95": 262.2647,
       "symbol": "DHR",
       "asset_class": "stock"
     },
@@ -81,9 +81,9 @@
       "rsi": 67.8,
       "risk_pct": 3.87,
       "reward_pct": 9.68,
-      "mc30_p5": 618.843,
-      "mc30_p50": 734.0743,
-      "mc30_p95": 880.0475,
+      "mc30_p5": 618.8432,
+      "mc30_p50": 734.0746,
+      "mc30_p95": 880.0465,
       "symbol": "DE",
       "asset_class": "stock"
     },
