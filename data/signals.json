@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-26 06:12:15",
+  "scanned_utc": "2026-09-26 08:36:56",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,28 +13,11 @@
       "rsi": 68.0,
       "risk_pct": 6.42,
       "reward_pct": 16.06,
-      "mc30_p5": 157.8102,
-      "mc30_p50": 204.9895,
-      "mc30_p95": 267.2341,
+      "mc30_p5": 157.8101,
+      "mc30_p50": 204.9894,
+      "mc30_p95": 267.2332,
       "symbol": "QCOM",
       "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 0.2706,
-      "sl": 0.238656,
-      "tp": 0.350459,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-09-26",
-      "atr": 0.021296,
-      "rsi": 79.3,
-      "risk_pct": 11.8,
-      "reward_pct": 29.51,
-      "mc30_p5": 0.1553,
-      "mc30_p50": 0.2619,
-      "mc30_p95": 0.4546,
-      "symbol": "ENA",
-      "asset_class": "crypto"
     }
   ]
 }
