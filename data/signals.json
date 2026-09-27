@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-26 10:09:48",
+  "scanned_utc": "2026-09-27 06:28:31",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -15,7 +15,7 @@
       "reward_pct": 16.06,
       "mc30_p5": 157.8102,
       "mc30_p50": 204.9897,
-      "mc30_p95": 267.2331,
+      "mc30_p95": 267.2334,
       "symbol": "QCOM",
       "asset_class": "stock"
     }
