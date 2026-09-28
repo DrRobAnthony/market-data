@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-27 10:50:24",
+  "scanned_utc": "2026-09-28 06:32:43",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,28 +13,11 @@
       "rsi": 68.0,
       "risk_pct": 6.42,
       "reward_pct": 16.06,
-      "mc30_p5": 157.8102,
-      "mc30_p50": 204.9897,
+      "mc30_p5": 157.81,
+      "mc30_p50": 204.9893,
       "mc30_p95": 267.2332,
       "symbol": "QCOM",
       "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 124.28,
-      "sl": 116.420008,
-      "tp": 143.929979,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-09-27",
-      "atr": 5.239994,
-      "rsi": 70.4,
-      "risk_pct": 6.32,
-      "reward_pct": 15.81,
-      "mc30_p5": 88.191,
-      "mc30_p50": 122.3811,
-      "mc30_p95": 168.1221,
-      "symbol": "SOL",
-      "asset_class": "crypto"
     }
   ]
 }
