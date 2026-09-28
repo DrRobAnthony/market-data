@@ -1,21 +1,21 @@
 {
-  "scanned_utc": "2026-09-28 06:32:43",
+  "scanned_utc": "2026-09-28 09:34:31",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
       "side": "long",
       "entry": 201.97,
       "sl": 188.999386,
-      "tp": 234.396536,
+      "tp": 234.396535,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-25",
       "atr": 8.647076,
       "rsi": 68.0,
       "risk_pct": 6.42,
       "reward_pct": 16.06,
-      "mc30_p5": 157.81,
+      "mc30_p5": 157.8099,
       "mc30_p50": 204.9893,
-      "mc30_p95": 267.2332,
+      "mc30_p95": 267.2337,
       "symbol": "QCOM",
       "asset_class": "stock"
     }
