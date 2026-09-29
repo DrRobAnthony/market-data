@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-09-29 09:39:38",
+  "scanned_utc": "2026-09-29 11:32:01",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,26 +13,26 @@
       "rsi": 71.3,
       "risk_pct": 3.82,
       "reward_pct": 9.56,
-      "mc30_p5": 190.0329,
-      "mc30_p50": 226.3171,
-      "mc30_p95": 269.5661,
+      "mc30_p5": 190.033,
+      "mc30_p50": 226.317,
+      "mc30_p95": 269.5663,
       "symbol": "DHR",
       "asset_class": "stock"
     },
     {
       "side": "long",
-      "entry": 167.74,
-      "sl": 152.28924,
-      "tp": 206.3669,
+      "entry": 167.27,
+      "sl": 151.720669,
+      "tp": 206.143328,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-09-29",
-      "atr": 10.300507,
-      "rsi": 69.9,
-      "risk_pct": 9.21,
-      "reward_pct": 23.03,
-      "mc30_p5": 109.91,
-      "mc30_p50": 163.902,
-      "mc30_p95": 250.8641,
+      "atr": 10.366221,
+      "rsi": 69.8,
+      "risk_pct": 9.3,
+      "reward_pct": 23.24,
+      "mc30_p5": 109.602,
+      "mc30_p50": 163.4082,
+      "mc30_p95": 250.1612,
       "symbol": "AAVE",
       "asset_class": "crypto"
     }
