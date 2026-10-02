@@ -1,5 +1,40 @@
 {
-  "scanned_utc": "2026-10-01 11:49:10",
+  "scanned_utc": "2026-10-02 06:54:20",
   "strategy": "daily trend-breakout v1",
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 197.81,
+      "sl": 193.040801,
+      "tp": 209.732998,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-10-01",
+      "atr": 3.179466,
+      "rsi": 66.3,
+      "risk_pct": 2.41,
+      "reward_pct": 6.03,
+      "mc30_p5": 176.6368,
+      "mc30_p50": 206.1246,
+      "mc30_p95": 239.8397,
+      "symbol": "XLK",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 184.66,
+      "sl": 167.500631,
+      "tp": 227.558424,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-10-02",
+      "atr": 11.43958,
+      "rsi": 73.5,
+      "risk_pct": 9.29,
+      "reward_pct": 23.23,
+      "mc30_p5": 118.482,
+      "mc30_p50": 180.9654,
+      "mc30_p95": 271.2782,
+      "symbol": "AAVE",
+      "asset_class": "crypto"
+    }
+  ]
 }
