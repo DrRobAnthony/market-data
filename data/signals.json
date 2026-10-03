@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-03 06:26:26",
+  "scanned_utc": "2026-10-03 09:10:23",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 65.6,
       "risk_pct": 1.9,
       "reward_pct": 4.75,
-      "mc30_p5": 680.5541,
-      "mc30_p50": 769.1828,
-      "mc30_p95": 873.4591,
+      "mc30_p5": 680.5537,
+      "mc30_p50": 769.1824,
+      "mc30_p95": 873.4596,
       "symbol": "QQQ",
       "asset_class": "stock"
     },
@@ -47,9 +47,9 @@
       "rsi": 67.8,
       "risk_pct": 5.96,
       "reward_pct": 14.91,
-      "mc30_p5": 274.0731,
-      "mc30_p50": 376.0902,
-      "mc30_p95": 522.2953,
+      "mc30_p5": 274.0741,
+      "mc30_p50": 376.0908,
+      "mc30_p95": 522.2961,
       "symbol": "LRCX",
       "asset_class": "stock"
     },
