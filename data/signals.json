@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-06 10:01:53",
+  "scanned_utc": "2026-10-06 12:09:20",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 68.6,
       "risk_pct": 1.86,
       "reward_pct": 4.65,
-      "mc30_p5": 684.4536,
-      "mc30_p50": 775.8481,
-      "mc30_p95": 879.2398,
+      "mc30_p5": 684.4533,
+      "mc30_p50": 775.8473,
+      "mc30_p95": 879.2406,
       "symbol": "QQQ",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 66.2,
       "risk_pct": 3.37,
       "reward_pct": 8.44,
-      "mc30_p5": 453.3741,
+      "mc30_p5": 453.3743,
       "mc30_p50": 531.9115,
-      "mc30_p95": 630.3936,
+      "mc30_p95": 630.3944,
       "symbol": "MSFT",
       "asset_class": "stock"
     },
@@ -47,7 +47,7 @@
       "rsi": 67.0,
       "risk_pct": 3.72,
       "reward_pct": 9.29,
-      "mc30_p5": 191.9919,
+      "mc30_p5": 191.9918,
       "mc30_p50": 247.755,
       "mc30_p95": 318.6243,
       "symbol": "NVDA",
