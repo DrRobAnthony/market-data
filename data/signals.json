@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-08 10:05:34",
+  "scanned_utc": "2026-10-08 12:14:43",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -14,27 +14,10 @@
       "risk_pct": 3.15,
       "reward_pct": 7.87,
       "mc30_p5": 237.3904,
-      "mc30_p50": 279.5399,
+      "mc30_p50": 279.5395,
       "mc30_p95": 324.374,
       "symbol": "ABBV",
       "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 0.38012,
-      "sl": 0.339061,
-      "tp": 0.482767,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-10-08",
-      "atr": 0.027372,
-      "rsi": 70.8,
-      "risk_pct": 10.8,
-      "reward_pct": 27.0,
-      "mc30_p5": 0.2385,
-      "mc30_p50": 0.3689,
-      "mc30_p95": 0.5863,
-      "symbol": "JUP",
-      "asset_class": "crypto"
     }
   ]
 }
