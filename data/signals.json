@@ -1,22 +1,22 @@
 {
-  "scanned_utc": "2026-10-08 12:14:43",
+  "scanned_utc": "2026-10-09 07:25:36",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
       "side": "long",
-      "entry": 271.36,
-      "sl": 262.815154,
-      "tp": 292.722115,
+      "entry": 198.78,
+      "sl": 189.311111,
+      "tp": 222.452221,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-10-07",
-      "atr": 5.696564,
-      "rsi": 65.8,
-      "risk_pct": 3.15,
-      "reward_pct": 7.87,
-      "mc30_p5": 237.3904,
-      "mc30_p50": 279.5395,
-      "mc30_p95": 324.374,
-      "symbol": "ABBV",
+      "date": "2026-10-08",
+      "atr": 6.312592,
+      "rsi": 70.0,
+      "risk_pct": 4.76,
+      "reward_pct": 11.91,
+      "mc30_p5": 152.0332,
+      "mc30_p50": 214.4174,
+      "mc30_p95": 317.1524,
+      "symbol": "PLTR",
       "asset_class": "stock"
     }
   ]
