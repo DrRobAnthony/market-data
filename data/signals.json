@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-11 07:07:59",
+  "scanned_utc": "2026-10-11 09:55:36",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -47,9 +47,9 @@
       "rsi": 71.3,
       "risk_pct": 3.19,
       "reward_pct": 7.97,
-      "mc30_p5": 241.9239,
-      "mc30_p50": 282.6391,
-      "mc30_p95": 328.585,
+      "mc30_p5": 241.9243,
+      "mc30_p50": 282.6389,
+      "mc30_p95": 328.5854,
       "symbol": "ABBV",
       "asset_class": "stock"
     },
@@ -103,6 +103,23 @@
       "mc30_p95": 427.3657,
       "symbol": "DDOG",
       "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 0.9885,
+      "sl": 0.885321,
+      "tp": 1.246447,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-10-11",
+      "atr": 0.068786,
+      "rsi": 71.7,
+      "risk_pct": 10.44,
+      "reward_pct": 26.09,
+      "mc30_p5": 0.6178,
+      "mc30_p50": 1.0247,
+      "mc30_p95": 1.7226,
+      "symbol": "AERO",
+      "asset_class": "crypto"
     }
   ]
 }
