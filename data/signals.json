@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-12 10:22:08",
+  "scanned_utc": "2026-10-12 13:05:15",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -47,9 +47,9 @@
       "rsi": 71.3,
       "risk_pct": 3.19,
       "reward_pct": 7.97,
-      "mc30_p5": 241.9239,
-      "mc30_p50": 282.639,
-      "mc30_p95": 328.5849,
+      "mc30_p5": 241.9236,
+      "mc30_p50": 282.6389,
+      "mc30_p95": 328.5852,
       "symbol": "ABBV",
       "asset_class": "stock"
     },
