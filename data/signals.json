@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-17 05:39:05",
+  "scanned_utc": "2026-10-17 07:48:11",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -14,8 +14,8 @@
       "risk_pct": 2.87,
       "reward_pct": 7.18,
       "mc30_p5": 61.3052,
-      "mc30_p50": 70.6091,
-      "mc30_p95": 80.0199,
+      "mc30_p50": 70.6089,
+      "mc30_p95": 80.0196,
       "symbol": "XLE",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 73.0,
       "risk_pct": 3.05,
       "reward_pct": 7.62,
-      "mc30_p5": 159.1213,
-      "mc30_p50": 184.6261,
-      "mc30_p95": 211.8481,
+      "mc30_p5": 159.1212,
+      "mc30_p50": 184.6264,
+      "mc30_p95": 211.8483,
       "symbol": "XOM",
       "asset_class": "stock"
     },
@@ -47,9 +47,9 @@
       "rsi": 70.8,
       "risk_pct": 3.03,
       "reward_pct": 7.58,
-      "mc30_p5": 201.5225,
-      "mc30_p50": 232.7398,
-      "mc30_p95": 264.7768,
+      "mc30_p5": 201.5222,
+      "mc30_p50": 232.7395,
+      "mc30_p95": 264.7762,
       "symbol": "CVX",
       "asset_class": "stock"
     },
@@ -64,9 +64,9 @@
       "rsi": 74.7,
       "risk_pct": 3.31,
       "reward_pct": 8.28,
-      "mc30_p5": 124.7149,
+      "mc30_p5": 124.7148,
       "mc30_p50": 150.5459,
-      "mc30_p95": 178.3699,
+      "mc30_p95": 178.3698,
       "symbol": "COP",
       "asset_class": "stock"
     },
@@ -82,7 +82,7 @@
       "risk_pct": 3.41,
       "reward_pct": 8.52,
       "mc30_p5": 135.1712,
-      "mc30_p50": 161.8307,
+      "mc30_p50": 161.831,
       "mc30_p95": 188.4092,
       "symbol": "EOG",
       "asset_class": "stock"
