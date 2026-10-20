@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-20 05:59:47",
+  "scanned_utc": "2026-10-20 08:32:43",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 71.2,
       "risk_pct": 2.32,
       "reward_pct": 5.81,
-      "mc30_p5": 455.4775,
-      "mc30_p50": 506.6126,
-      "mc30_p95": 563.3507,
+      "mc30_p5": 455.4777,
+      "mc30_p50": 506.6124,
+      "mc30_p95": 563.3508,
       "symbol": "LIN",
       "asset_class": "stock"
     }
