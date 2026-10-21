@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-21 08:37:05",
+  "scanned_utc": "2026-10-21 10:17:11",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -14,8 +14,8 @@
       "risk_pct": 2.49,
       "reward_pct": 6.23,
       "mc30_p5": 366.7272,
-      "mc30_p50": 415.7447,
-      "mc30_p95": 475.2528,
+      "mc30_p50": 415.7443,
+      "mc30_p95": 475.2524,
       "symbol": "V",
       "asset_class": "stock"
     },
@@ -32,7 +32,7 @@
       "reward_pct": 7.47,
       "mc30_p5": 200.4094,
       "mc30_p50": 233.2903,
-      "mc30_p95": 265.6842,
+      "mc30_p95": 265.6835,
       "symbol": "CVX",
       "asset_class": "stock"
     },
@@ -47,8 +47,8 @@
       "rsi": 71.3,
       "risk_pct": 4.35,
       "reward_pct": 10.86,
-      "mc30_p5": 315.0747,
-      "mc30_p50": 416.765,
+      "mc30_p5": 315.0746,
+      "mc30_p50": 416.7651,
       "mc30_p95": 512.4628,
       "symbol": "UNH",
       "asset_class": "stock"
@@ -64,9 +64,9 @@
       "rsi": 72.7,
       "risk_pct": 2.81,
       "reward_pct": 7.02,
-      "mc30_p5": 26.5428,
+      "mc30_p5": 26.5426,
       "mc30_p50": 30.4678,
-      "mc30_p95": 34.7168,
+      "mc30_p95": 34.7167,
       "symbol": "PFE",
       "asset_class": "stock"
     },
@@ -81,9 +81,9 @@
       "rsi": 79.5,
       "risk_pct": 2.83,
       "reward_pct": 7.07,
-      "mc30_p5": 349.3023,
-      "mc30_p50": 409.5668,
-      "mc30_p95": 478.8164,
+      "mc30_p5": 349.3027,
+      "mc30_p50": 409.5666,
+      "mc30_p95": 478.8165,
       "symbol": "MAR",
       "asset_class": "stock"
     }
