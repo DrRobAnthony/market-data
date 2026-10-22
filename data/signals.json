@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-22 06:02:57",
+  "scanned_utc": "2026-10-22 08:34:25",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,8 +13,8 @@
       "rsi": 64.7,
       "risk_pct": 4.39,
       "reward_pct": 10.97,
-      "mc30_p5": 193.9445,
-      "mc30_p50": 233.3226,
+      "mc30_p5": 193.9446,
+      "mc30_p50": 233.3227,
       "mc30_p95": 278.7155,
       "symbol": "DHR",
       "asset_class": "stock"
