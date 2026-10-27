@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-27 08:59:45",
+  "scanned_utc": "2026-10-27 10:40:49",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -14,8 +14,8 @@
       "risk_pct": 3.11,
       "reward_pct": 7.78,
       "mc30_p5": 163.8445,
-      "mc30_p50": 190.4425,
-      "mc30_p95": 218.8816,
+      "mc30_p50": 190.442,
+      "mc30_p95": 218.8818,
       "symbol": "XOM",
       "asset_class": "stock"
     },
