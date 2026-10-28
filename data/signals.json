@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-28 06:57:44",
+  "scanned_utc": "2026-10-28 09:36:12",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 70.0,
       "risk_pct": 4.7,
       "reward_pct": 11.76,
-      "mc30_p5": 249.9084,
-      "mc30_p50": 317.3568,
-      "mc30_p95": 398.7326,
+      "mc30_p5": 249.9086,
+      "mc30_p50": 317.3566,
+      "mc30_p95": 398.7323,
       "symbol": "TXN",
       "asset_class": "stock"
     }
