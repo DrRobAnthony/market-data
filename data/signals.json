@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-10-29 07:08:16",
+  "scanned_utc": "2026-10-29 09:32:03",
   "strategy": "daily trend-breakout v1",
   "signals": [
     {
@@ -13,9 +13,9 @@
       "rsi": 70.4,
       "risk_pct": 4.53,
       "reward_pct": 11.32,
-      "mc30_p5": 251.7853,
-      "mc30_p50": 317.1623,
-      "mc30_p95": 402.2521,
+      "mc30_p5": 251.7851,
+      "mc30_p50": 317.1621,
+      "mc30_p95": 402.2517,
       "symbol": "TXN",
       "asset_class": "stock"
     },
@@ -30,9 +30,9 @@
       "rsi": 66.2,
       "risk_pct": 3.59,
       "reward_pct": 8.98,
-      "mc30_p5": 392.4368,
-      "mc30_p50": 464.0636,
-      "mc30_p95": 544.3829,
+      "mc30_p5": 392.437,
+      "mc30_p50": 464.0633,
+      "mc30_p95": 544.3827,
       "symbol": "AMGN",
       "asset_class": "stock"
     }
