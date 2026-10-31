@@ -9,7 +9,9 @@ Runs inside GitHub Actions. Steps:
      Monte Carlo 30-day price range)
 
 Strategy: daily-bar Donchian breakout with EMA50/200 trend filter,
-ATR(14)-based levels (SL 3.0x, TP 6.0x). Out-of-sample validated.
+ATR(14)-based levels (multipliers in PARAMS below). Signals use completed
+daily bars only. Every signal is appended to data/signal_log.json and scored
+by ledger.py (average R, live vs backtest).
 """
 import csv
 import os
@@ -40,6 +42,14 @@ KRAKEN_PAIRS = {"BTC": "XBTUSD", "ETH": "ETHUSD", "SOL": "SOLUSD",
                 "XRP": "XRPUSD", "ADA": "ADAUSD", "DOGE": "DOGEUSD",
                 "LINK": "LINKUSD"}
 
+# SL/TP history: 3.0x/6.0x ATR at creation (2026-08-23; the "46% win, PF 1.49"
+# figure belongs to this setting) -> 3.0x/7.5x the same day -> 1.5x/3.75x on
+# 2026-09-12 (smaller-account risk sizing). Replay of these exact rules over
+# 176 symbols, 2022 onward, gross of costs, hindsight watchlist:
+#   3.0/6.0  ~42% win, PF ~1.45     3.0/7.5  ~38% win, PF ~1.53
+#   1.5/3.75 ~34% win, PF ~1.30
+# Change both numbers HERE only. The ledger scores each signal with the levels
+# stored when it was emitted, so changing these never rewrites old results.
 PARAMS = {"ema_fast": 50, "ema_slow": 200, "atr_n": 14, "breakout_n": 55,
           "sl_atr": 1.5, "tp_atr": 3.75, "rsi_max_long": 80,
           "rsi_min_short": 999}
@@ -248,6 +258,47 @@ def scan_symbol(rows, p=PARAMS):
     return sig
 
 
+# ---------------- completed-bar rule + signal log ----------------
+
+def completed_bars(rows, today_utc=None):
+    """Drop a trailing bar dated today (UTC) or later: it is still forming.
+
+    Crypto daily bars roll over at 00:00 UTC, so a nightly run at 00:47 UTC
+    sees a bar that is minutes old. Scanning it fired signals on "closes"
+    that had not happened. Stock bars are dated by the US trading day, so
+    the after-close run keeps the finished bar; a manual run during market
+    hours drops the unfinished one. (A manual run before 00:00 UTC also drops
+    that day's already-finished stock bar; the next nightly run picks it up.)
+    """
+    today = today_utc or time.strftime("%Y-%m-%d", time.gmtime())
+    if rows and rows[-1][0] >= today:
+        return rows[:-1]
+    return rows
+
+
+SIGNAL_LOG = DATA / "signal_log.json"
+
+
+def append_signal_log(signals, now):
+    """Append-only record of every signal ever emitted (first sighting wins).
+
+    ledger.py scores this file, so levels stay fixed even if PARAMS change.
+    """
+    log = json.loads(SIGNAL_LOG.read_text()) if SIGNAL_LOG.exists() else []
+    seen = {f"{s['symbol']}|{s['date']}" for s in log}
+    added = 0
+    for s in signals:
+        key = f"{s['symbol']}|{s['date']}"
+        if key in seen:
+            continue
+        log.append({k: s[k] for k in ("symbol", "date", "asset_class", "side",
+                                      "entry", "sl", "tp", "atr", "rsi")}
+                   | {"first_seen_utc": now})
+        added += 1
+    SIGNAL_LOG.write_text(json.dumps(log, indent=1))
+    return added
+
+
 # ---------------- main ----------------
 
 def main():
@@ -276,7 +327,7 @@ def main():
                                      float(rec["high"]), float(rec["low"]),
                                      float(rec["close"]),
                                      float(rec["volume"])))
-                sig = scan_symbol(rows)
+                sig = scan_symbol(completed_bars(rows))
                 if sig:
                     sig["symbol"] = sym
                     sig["asset_class"] = group
@@ -293,7 +344,9 @@ def main():
          "signals_found": len(signals)}, indent=2))
     Path("data/signals.json").write_text(json.dumps(
         {"scanned_utc": now, "strategy": "daily trend-breakout v1",
-         "signals": signals}, indent=2))
+         "params": PARAMS, "signals": signals}, indent=2))
+    added = append_signal_log(signals, now)
+    print(f"signal_log: {added} new")
     print(json.dumps({"failures": failures, "signals": len(signals)}))
 
 

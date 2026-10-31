@@ -35,6 +35,10 @@ jobs:
       - name: Fetch market data and scan
         run: python fetch_data.py
 
+      - name: Score signal ledger (live record vs backtest)
+        continue-on-error: true
+        run: python ledger.py
+
       - name: Prepare fallback email (dedupe against previously emailed)
         id: mail_prep
         run: |
@@ -57,15 +61,32 @@ jobs:
                       f"<b>{s['symbol']} — {s['side'].upper()}</b> ({s['date']})<br>"
                       f"Entry ${s['entry']} | Stop-loss ${s['sl']} "
                       f"(-{s['risk_pct']}%) | Take-profit ${s['tp']} "
-                      f"(+{s['reward_pct']}%, 1:2.5 R:R)<br>"
+                      f"(+{s['reward_pct']}%, 1:{s['reward_pct'] / s['risk_pct']:.1f} R:R)<br>"
                       f"RSI {s['rsi']} | 30-day range ${s['mc30_p5']} – "
                       f"${s['mc30_p95']} (median ${s['mc30_p50']})<br>"
                       f"<i>{html.escape(s['thesis'])}</i></div>")
+              track = ""
+              try:
+                  p = sig["params"]
+                  key = f"SL{float(p['sl_atr'])}xATR/TP{float(p['tp_atr'])}xATR"
+                  led = json.loads(Path("data/ledger.json").read_text())
+                  e = led["summary"]["by_settings"][key]
+                  ref = e.get("backtest_ref")
+                  if ref:
+                      track += (f"Backtest 2022–2026 at these settings (before costs, "
+                                f"watchlist chosen with hindsight): "
+                                f"{ref['win_pct_of_resolved']}% win, PF {ref['profit_factor']}. ")
+                  track += (f"Live record at these settings: {e['n']} signals, avg "
+                            f"{e['avg_R_incl_open']:+.2f}R incl. open positions")
+                  if ref:
+                      track += f" (backtest {ref['expectancy_R']:+.2f}R)"
+                  track += ". "
+              except Exception:
+                  track = "Live record: see data/ledger.json. "
               parts.append("<p style='color:#777;font-size:13px'>Strategy: daily "
-                           "trend-breakout, long-only, validated out-of-sample "
-                           "2022–2026 (46% win rate, PF 1.49). Signals are "
-                           "information, not orders. Not financial advice.<br>"
-                           "Sent directly by your GitHub data engine.</p></div>")
+                           "trend-breakout, long-only. " + track +
+                           "Signals are information, not orders. Not financial "
+                           "advice.<br>Sent directly by your GitHub data engine.</p></div>")
               Path("email_body.html").write_text("".join(parts))
               sent += [f"{s['symbol']}|{s['date']}" for s in new]
               sent_path.write_text(json.dumps(sent[-300:]))
