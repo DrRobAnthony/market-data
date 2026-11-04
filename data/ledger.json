@@ -1,5 +1,5 @@
 {
- "as_of_utc": "2026-11-04 10:28:14",
+ "as_of_utc": "2026-11-04 13:12:15",
  "how_to_read": "avg_R_incl_open: 1R = distance to the stop; open positions marked to last completed close. Compare with backtest_ref.expectancy_R. Gross of costs.",
  "summary": {
   "all_signals": {

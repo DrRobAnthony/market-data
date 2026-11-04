@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-04 10:28:14",
+  "scanned_utc": "2026-11-04 13:12:15",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -23,8 +23,8 @@
       "rsi": 67.3,
       "risk_pct": 4.85,
       "reward_pct": 12.13,
-      "mc30_p5": 255.8973,
-      "mc30_p50": 321.0038,
+      "mc30_p5": 255.8964,
+      "mc30_p50": 321.0036,
       "mc30_p95": 403.7633,
       "symbol": "TXN",
       "asset_class": "stock"
@@ -41,7 +41,7 @@
       "risk_pct": 2.67,
       "reward_pct": 6.67,
       "mc30_p5": 99.382,
-      "mc30_p50": 115.5618,
+      "mc30_p50": 115.5617,
       "mc30_p95": 135.3673,
       "symbol": "DIS",
       "asset_class": "stock"
