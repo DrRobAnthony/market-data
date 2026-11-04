@@ -2859,5 +2859,29 @@
   "atr": 11.321304,
   "rsi": 72.3,
   "first_seen_utc": "2026-11-03 07:54:25"
+ },
+ {
+  "symbol": "TXN",
+  "date": "2026-11-03",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 312.49,
+  "sl": 297.324532,
+  "tp": 350.40367,
+  "atr": 10.110312,
+  "rsi": 67.3,
+  "first_seen_utc": "2026-11-04 07:37:16"
+ },
+ {
+  "symbol": "DIS",
+  "date": "2026-11-03",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 114.18,
+  "sl": 111.133058,
+  "tp": 121.797354,
+  "atr": 2.031294,
+  "rsi": 66.3,
+  "first_seen_utc": "2026-11-04 07:37:16"
  }
 ]
