@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-06 10:30:58",
+  "scanned_utc": "2026-11-06 13:07:09",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -23,9 +23,9 @@
       "rsi": 72.2,
       "risk_pct": 2.83,
       "reward_pct": 7.06,
-      "mc30_p5": 959.5775,
+      "mc30_p5": 959.5782,
       "mc30_p50": 1078.7533,
-      "mc30_p95": 1207.9861,
+      "mc30_p95": 1207.9855,
       "symbol": "COST",
       "asset_class": "stock"
     }
