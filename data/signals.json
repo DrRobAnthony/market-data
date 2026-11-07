@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-06 13:07:09",
+  "scanned_utc": "2026-11-07 07:16:36",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -11,23 +11,5 @@
     "rsi_max_long": 80,
     "rsi_min_short": 999
   },
-  "signals": [
-    {
-      "side": "long",
-      "entry": 1065.59,
-      "sl": 1035.479195,
-      "tp": 1140.867014,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-05",
-      "atr": 20.07387,
-      "rsi": 72.2,
-      "risk_pct": 2.83,
-      "reward_pct": 7.06,
-      "mc30_p5": 959.5782,
-      "mc30_p50": 1078.7533,
-      "mc30_p95": 1207.9855,
-      "symbol": "COST",
-      "asset_class": "stock"
-    }
-  ]
+  "signals": []
 }

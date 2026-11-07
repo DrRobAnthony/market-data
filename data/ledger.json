@@ -1,24 +1,24 @@
 {
- "as_of_utc": "2026-11-06 13:07:09",
+ "as_of_utc": "2026-11-07 07:16:36",
  "how_to_read": "avg_R_incl_open: 1R = distance to the stop; open positions marked to last completed close. Compare with backtest_ref.expectancy_R. Gross of costs.",
  "summary": {
   "all_signals": {
    "n": 257,
    "tp": 30,
-   "sl": 179,
-   "open": 48,
-   "win_pct_of_resolved": 14.4,
-   "avg_R_resolved": -0.5,
-   "avg_R_incl_open": -0.39
+   "sl": 197,
+   "open": 30,
+   "win_pct_of_resolved": 13.2,
+   "avg_R_resolved": -0.54,
+   "avg_R_incl_open": -0.45
   },
   "independent_entries": {
-   "n": 123,
+   "n": 126,
    "tp": 16,
-   "sl": 84,
-   "open": 23,
-   "win_pct_of_resolved": 16.0,
-   "avg_R_resolved": -0.44,
-   "avg_R_incl_open": -0.32
+   "sl": 95,
+   "open": 15,
+   "win_pct_of_resolved": 14.4,
+   "avg_R_resolved": -0.5,
+   "avg_R_incl_open": -0.41
   },
   "by_asset_class": {
    "crypto": {
@@ -33,22 +33,22 @@
    "stock": {
     "n": 228,
     "tp": 22,
-    "sl": 158,
-    "open": 48,
-    "win_pct_of_resolved": 12.2,
-    "avg_R_resolved": -0.57,
-    "avg_R_incl_open": -0.43
+    "sl": 176,
+    "open": 30,
+    "win_pct_of_resolved": 11.1,
+    "avg_R_resolved": -0.61,
+    "avg_R_incl_open": -0.51
    }
   },
   "by_settings": {
    "SL1.5xATR/TP3.75xATR": {
     "n": 201,
     "tp": 26,
-    "sl": 136,
-    "open": 39,
-    "win_pct_of_resolved": 16.0,
-    "avg_R_resolved": -0.44,
-    "avg_R_incl_open": -0.34,
+    "sl": 153,
+    "open": 22,
+    "win_pct_of_resolved": 14.5,
+    "avg_R_resolved": -0.49,
+    "avg_R_incl_open": -0.42,
     "backtest_ref": {
      "win_pct_of_resolved": 34.2,
      "profit_factor": 1.3,
@@ -58,11 +58,11 @@
    "SL3.0xATR/TP7.5xATR": {
     "n": 56,
     "tp": 4,
-    "sl": 43,
-    "open": 9,
-    "win_pct_of_resolved": 8.5,
-    "avg_R_resolved": -0.7,
-    "avg_R_incl_open": -0.54,
+    "sl": 44,
+    "open": 8,
+    "win_pct_of_resolved": 8.3,
+    "avg_R_resolved": -0.71,
+    "avg_R_incl_open": -0.58,
     "backtest_ref": {
      "win_pct_of_resolved": 38.0,
      "profit_factor": 1.53,
@@ -72,40 +72,40 @@
   },
   "by_signal_age_days": {
    "0-7": {
-    "n": 43,
+    "n": 31,
     "tp": 0,
-    "sl": 13,
-    "open": 30,
+    "sl": 20,
+    "open": 11,
     "win_pct_of_resolved": 0.0,
     "avg_R_resolved": -1.0,
-    "avg_R_incl_open": -0.31
+    "avg_R_incl_open": -0.64
    },
    "8-14": {
-    "n": 21,
+    "n": 25,
     "tp": 2,
-    "sl": 14,
-    "open": 5,
-    "win_pct_of_resolved": 12.5,
-    "avg_R_resolved": -0.56,
-    "avg_R_incl_open": -0.38
+    "sl": 15,
+    "open": 8,
+    "win_pct_of_resolved": 11.8,
+    "avg_R_resolved": -0.59,
+    "avg_R_incl_open": -0.39
    },
    "15-30": {
-    "n": 64,
-    "tp": 18,
-    "sl": 43,
-    "open": 3,
-    "win_pct_of_resolved": 29.5,
-    "avg_R_resolved": 0.03,
-    "avg_R_incl_open": 0.04
+    "n": 71,
+    "tp": 17,
+    "sl": 52,
+    "open": 2,
+    "win_pct_of_resolved": 24.6,
+    "avg_R_resolved": -0.14,
+    "avg_R_incl_open": -0.11
    },
    "31+": {
-    "n": 129,
-    "tp": 10,
-    "sl": 109,
-    "open": 10,
-    "win_pct_of_resolved": 8.4,
-    "avg_R_resolved": -0.71,
-    "avg_R_incl_open": -0.63
+    "n": 130,
+    "tp": 11,
+    "sl": 110,
+    "open": 9,
+    "win_pct_of_resolved": 9.1,
+    "avg_R_resolved": -0.68,
+    "avg_R_incl_open": -0.61
    }
   }
  },
@@ -119,7 +119,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -130,9 +130,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.252,
+   "R": 0.384,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -145,7 +145,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -158,7 +158,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -171,7 +171,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -184,7 +184,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -197,7 +197,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -210,7 +210,7 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -223,7 +223,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -236,7 +236,7 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -249,7 +249,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -262,7 +262,7 @@
    "exit_date": "2026-08-26",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -275,7 +275,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -288,7 +288,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -301,7 +301,7 @@
    "exit_date": "2026-09-18",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -314,7 +314,7 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -327,7 +327,7 @@
    "exit_date": "2026-09-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -340,7 +340,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -353,7 +353,7 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -366,7 +366,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -375,11 +375,11 @@
    "date": "2026-08-25",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": 0.734,
+   "result": "SL",
+   "exit_date": "2026-10-05",
+   "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -392,7 +392,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -403,9 +403,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.309,
+   "R": -0.318,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -418,7 +418,7 @@
    "exit_date": "2026-09-02",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -431,7 +431,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -444,7 +444,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -455,9 +455,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.62,
+   "R": 0.472,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 70,
+   "age_days": 71,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -470,7 +470,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 70,
+   "age_days": 71,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -481,9 +481,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.373,
+   "R": -0.382,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -496,7 +496,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -509,7 +509,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -520,9 +520,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.153,
+   "R": 0.127,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -533,9 +533,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.202,
+   "R": -0.07,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -546,9 +546,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.522,
+   "R": 1.463,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -561,7 +561,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -574,7 +574,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -587,7 +587,7 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -598,9 +598,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.095,
+   "R": 0.068,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -613,7 +613,7 @@
    "exit_date": "2026-10-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -626,7 +626,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -639,7 +639,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -652,7 +652,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -665,7 +665,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -678,7 +678,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -691,7 +691,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -704,7 +704,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -717,7 +717,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -730,7 +730,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -743,7 +743,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -756,7 +756,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 62,
+   "age_days": 63,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -769,7 +769,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 61,
+   "age_days": 62,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -782,7 +782,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 60,
+   "age_days": 61,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -795,7 +795,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 58,
+   "age_days": 59,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -808,7 +808,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -821,7 +821,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -834,7 +834,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 55,
+   "age_days": 56,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -847,7 +847,7 @@
    "exit_date": "2026-10-06",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -860,7 +860,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -873,7 +873,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -886,7 +886,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -899,7 +899,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -912,7 +912,7 @@
    "exit_date": "2026-10-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -925,7 +925,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -938,7 +938,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -951,7 +951,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -964,7 +964,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -977,7 +977,7 @@
    "exit_date": "2026-10-28",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -990,7 +990,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1003,7 +1003,7 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1016,7 +1016,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1027,9 +1027,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.784,
+   "R": 1.534,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1042,7 +1042,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1055,7 +1055,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1068,7 +1068,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1081,7 +1081,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1094,7 +1094,7 @@
    "exit_date": "2026-09-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 48,
+   "age_days": 49,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1107,7 +1107,7 @@
    "exit_date": "2026-09-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 48,
+   "age_days": 49,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1120,7 +1120,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1133,7 +1133,7 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1146,7 +1146,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1159,7 +1159,7 @@
    "exit_date": "2026-10-08",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1172,7 +1172,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1185,7 +1185,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1198,7 +1198,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1211,7 +1211,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1224,7 +1224,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1237,7 +1237,7 @@
    "exit_date": "2026-09-26",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1250,7 +1250,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1263,7 +1263,7 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1276,7 +1276,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1289,7 +1289,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1302,7 +1302,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1315,7 +1315,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1328,7 +1328,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1341,7 +1341,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1354,7 +1354,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1367,7 +1367,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1380,7 +1380,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1393,7 +1393,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1406,7 +1406,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1419,7 +1419,7 @@
    "exit_date": "2026-10-10",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1432,7 +1432,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1445,7 +1445,7 @@
    "exit_date": "2026-09-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1458,7 +1458,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1471,7 +1471,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 41,
+   "age_days": 42,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1484,7 +1484,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 40,
+   "age_days": 41,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1497,7 +1497,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 39,
+   "age_days": 40,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1510,7 +1510,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1523,7 +1523,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1536,7 +1536,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1549,7 +1549,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1562,7 +1562,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1575,7 +1575,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1588,7 +1588,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1601,7 +1601,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1614,7 +1614,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1627,7 +1627,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1640,7 +1640,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1653,7 +1653,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1666,7 +1666,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1679,7 +1679,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1692,7 +1692,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1705,7 +1705,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1718,7 +1718,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1731,7 +1731,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1744,7 +1744,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1757,7 +1757,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1770,7 +1770,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1783,7 +1783,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1796,7 +1796,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 30,
+   "age_days": 31,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1809,7 +1809,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1822,7 +1822,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1835,7 +1835,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1848,7 +1848,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1861,7 +1861,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1874,7 +1874,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1887,7 +1887,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1900,7 +1900,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1913,7 +1913,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1926,7 +1926,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1939,7 +1939,7 @@
    "exit_date": "2026-10-22",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1952,7 +1952,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1965,7 +1965,7 @@
    "exit_date": "2026-10-22",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1978,7 +1978,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1991,7 +1991,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2004,7 +2004,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2017,7 +2017,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2030,7 +2030,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2043,7 +2043,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2056,7 +2056,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2067,9 +2067,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.491,
+   "R": 0.807,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2082,7 +2082,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2095,7 +2095,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2108,7 +2108,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2121,7 +2121,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2134,7 +2134,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2147,7 +2147,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2160,7 +2160,7 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2173,7 +2173,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2186,7 +2186,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2199,7 +2199,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2212,7 +2212,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2225,7 +2225,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2238,7 +2238,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2251,7 +2251,7 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2264,7 +2264,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2277,7 +2277,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 21,
+   "age_days": 22,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2290,7 +2290,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 21,
+   "age_days": 22,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2303,7 +2303,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 21,
+   "age_days": 22,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2316,7 +2316,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 21,
+   "age_days": 22,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2329,7 +2329,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 21,
+   "age_days": 22,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2342,7 +2342,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2355,7 +2355,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2368,7 +2368,7 @@
    "exit_date": "2026-10-27",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2378,12 +2378,12 @@
    "asset_class": "stock",
    "side": "long",
    "result": "SL",
-   "exit_date": "2026-10-28",
+   "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
-   "independent": false
+   "independent": true
   },
   {
    "symbol": "UNH",
@@ -2394,7 +2394,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2407,7 +2407,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2416,11 +2416,11 @@
    "date": "2026-10-21",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.733,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2433,7 +2433,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2444,9 +2444,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.805,
+   "R": 0.814,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2459,7 +2459,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2472,7 +2472,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2485,7 +2485,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2498,7 +2498,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2511,7 +2511,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2524,7 +2524,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2537,7 +2537,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2550,7 +2550,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2560,12 +2560,12 @@
    "asset_class": "stock",
    "side": "long",
    "result": "SL",
-   "exit_date": "2026-10-27",
+   "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
-   "independent": false
+   "independent": true
   },
   {
    "symbol": "PG",
@@ -2576,7 +2576,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2589,7 +2589,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2602,7 +2602,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2615,7 +2615,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2628,7 +2628,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2641,7 +2641,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2654,7 +2654,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2667,7 +2667,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2680,7 +2680,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2693,7 +2693,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2706,7 +2706,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2719,7 +2719,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2732,7 +2732,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2745,7 +2745,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2758,7 +2758,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 10,
+   "age_days": 11,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2769,9 +2769,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.521,
+   "R": 0.529,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2784,7 +2784,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2795,9 +2795,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.027,
+   "R": -0.018,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2808,9 +2808,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.323,
+   "R": 0.211,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2821,9 +2821,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.141,
+   "R": -0.309,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2836,7 +2836,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2849,7 +2849,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2862,7 +2862,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2873,9 +2873,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.346,
+   "R": -0.263,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2888,7 +2888,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2901,7 +2901,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2914,7 +2914,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2927,7 +2927,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2940,7 +2940,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2951,9 +2951,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.463,
+   "R": -0.564,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2964,9 +2964,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.561,
+   "R": 0.081,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2975,11 +2975,11 @@
    "date": "2026-10-30",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.784,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2988,11 +2988,11 @@
    "date": "2026-10-30",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.176,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3001,13 +3001,13 @@
    "date": "2026-10-30",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.743,
+   "result": "SL",
+   "exit_date": "2026-11-03",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
-   "independent": false
+   "independent": true
   },
   {
    "symbol": "WMT",
@@ -3016,9 +3016,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.158,
+   "R": 0.553,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3031,7 +3031,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3044,7 +3044,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 7,
+   "age_days": 8,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3055,9 +3055,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.957,
+   "R": 0.497,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3068,9 +3068,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.146,
+   "R": -0.908,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3079,11 +3079,11 @@
    "date": "2026-11-02",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.04,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3094,9 +3094,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.121,
+   "R": -0.357,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3105,11 +3105,11 @@
    "date": "2026-11-02",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.116,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3120,9 +3120,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.066,
+   "R": 0.012,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3133,9 +3133,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.615,
+   "R": 0.731,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3146,9 +3146,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.098,
+   "R": 0.359,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3157,11 +3157,11 @@
    "date": "2026-11-02",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.254,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3170,11 +3170,11 @@
    "date": "2026-11-02",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": 0.008,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3185,9 +3185,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.998,
+   "R": 0.843,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3200,7 +3200,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3213,7 +3213,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3226,7 +3226,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3235,11 +3235,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.021,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3250,9 +3250,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.674,
+   "R": 0.25,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3265,7 +3265,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3274,11 +3274,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.502,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3289,9 +3289,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.155,
+   "R": -0.574,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3300,11 +3300,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.71,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3313,11 +3313,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.265,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3326,11 +3326,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.829,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3339,11 +3339,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.031,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3356,7 +3356,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3365,11 +3365,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.046,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3380,9 +3380,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.585,
+   "R": -0.336,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3391,11 +3391,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.896,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3408,7 +3408,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3417,11 +3417,11 @@
    "date": "2026-11-04",
    "asset_class": "stock",
    "side": "long",
-   "result": "OPEN",
-   "exit_date": null,
-   "R": -0.339,
+   "result": "SL",
+   "exit_date": "2026-11-06",
+   "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3434,7 +3434,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3445,9 +3445,9 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.0,
+   "R": -0.4,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 1,
+   "age_days": 2,
    "legacy_partial_bar": false,
    "independent": false
   }
