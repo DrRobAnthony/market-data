@@ -1,5 +1,5 @@
 {
- "as_of_utc": "2026-11-07 11:58:57",
+ "as_of_utc": "2026-11-08 07:20:59",
  "how_to_read": "avg_R_incl_open: 1R = distance to the stop; open positions marked to last completed close. Compare with backtest_ref.expectancy_R. Gross of costs.",
  "summary": {
   "all_signals": {
@@ -90,22 +90,22 @@
     "avg_R_incl_open": -0.39
    },
    "15-30": {
-    "n": 71,
+    "n": 69,
     "tp": 17,
-    "sl": 52,
+    "sl": 50,
     "open": 2,
-    "win_pct_of_resolved": 24.6,
-    "avg_R_resolved": -0.14,
-    "avg_R_incl_open": -0.11
+    "win_pct_of_resolved": 25.4,
+    "avg_R_resolved": -0.11,
+    "avg_R_incl_open": -0.09
    },
    "31+": {
-    "n": 130,
+    "n": 132,
     "tp": 11,
-    "sl": 110,
+    "sl": 112,
     "open": 9,
-    "win_pct_of_resolved": 9.1,
-    "avg_R_resolved": -0.68,
-    "avg_R_incl_open": -0.61
+    "win_pct_of_resolved": 8.9,
+    "avg_R_resolved": -0.69,
+    "avg_R_incl_open": -0.62
    }
   }
  },
@@ -119,7 +119,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -132,7 +132,7 @@
    "exit_date": null,
    "R": 0.384,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -145,7 +145,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -158,7 +158,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -171,7 +171,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -184,7 +184,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 78,
+   "age_days": 79,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -197,7 +197,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -210,7 +210,7 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -223,7 +223,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -236,7 +236,7 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -249,7 +249,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -262,7 +262,7 @@
    "exit_date": "2026-08-26",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -275,7 +275,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -288,7 +288,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -301,7 +301,7 @@
    "exit_date": "2026-09-18",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 75,
+   "age_days": 76,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -314,7 +314,7 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -327,7 +327,7 @@
    "exit_date": "2026-09-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -340,7 +340,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -353,7 +353,7 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -366,7 +366,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -379,7 +379,7 @@
    "exit_date": "2026-10-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -392,7 +392,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -405,7 +405,7 @@
    "exit_date": null,
    "R": -0.318,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 72,
+   "age_days": 73,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -418,7 +418,7 @@
    "exit_date": "2026-09-02",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 72,
+   "age_days": 73,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -431,7 +431,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 72,
+   "age_days": 73,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -444,7 +444,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 72,
+   "age_days": 73,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -457,7 +457,7 @@
    "exit_date": null,
    "R": 0.472,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -470,7 +470,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -483,7 +483,7 @@
    "exit_date": null,
    "R": -0.382,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 68,
+   "age_days": 69,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -496,7 +496,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 68,
+   "age_days": 69,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -509,7 +509,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -522,7 +522,7 @@
    "exit_date": null,
    "R": 0.127,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -535,7 +535,7 @@
    "exit_date": null,
    "R": -0.07,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -548,7 +548,7 @@
    "exit_date": null,
    "R": 1.463,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -561,7 +561,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -574,7 +574,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -587,7 +587,7 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -600,7 +600,7 @@
    "exit_date": null,
    "R": 0.068,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -613,7 +613,7 @@
    "exit_date": "2026-10-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -626,7 +626,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -639,7 +639,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -652,7 +652,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -665,7 +665,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -678,7 +678,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -691,7 +691,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -704,7 +704,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -717,7 +717,7 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -730,7 +730,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -743,7 +743,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -756,7 +756,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -769,7 +769,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 62,
+   "age_days": 63,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -782,7 +782,7 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 61,
+   "age_days": 62,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -795,7 +795,7 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 59,
+   "age_days": 60,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -808,7 +808,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 57,
+   "age_days": 58,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -821,7 +821,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 57,
+   "age_days": 58,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -834,7 +834,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -847,7 +847,7 @@
    "exit_date": "2026-10-06",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 54,
+   "age_days": 55,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -860,7 +860,7 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 54,
+   "age_days": 55,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -873,7 +873,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 54,
+   "age_days": 55,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -886,7 +886,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 54,
+   "age_days": 55,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -899,7 +899,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -912,7 +912,7 @@
    "exit_date": "2026-10-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -925,7 +925,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -938,7 +938,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -951,7 +951,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -964,7 +964,7 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -977,7 +977,7 @@
    "exit_date": "2026-10-28",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -990,7 +990,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1003,7 +1003,7 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1016,7 +1016,7 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1029,7 +1029,7 @@
    "exit_date": null,
    "R": 1.534,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1042,7 +1042,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1055,7 +1055,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1068,7 +1068,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1081,7 +1081,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1094,7 +1094,7 @@
    "exit_date": "2026-09-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1107,7 +1107,7 @@
    "exit_date": "2026-09-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1120,7 +1120,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1133,7 +1133,7 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1146,7 +1146,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1159,7 +1159,7 @@
    "exit_date": "2026-10-08",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1172,7 +1172,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1185,7 +1185,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1198,7 +1198,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1211,7 +1211,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1224,7 +1224,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1237,7 +1237,7 @@
    "exit_date": "2026-09-26",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1250,7 +1250,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1263,7 +1263,7 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1276,7 +1276,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1289,7 +1289,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1302,7 +1302,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1315,7 +1315,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1328,7 +1328,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1341,7 +1341,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1354,7 +1354,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1367,7 +1367,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1380,7 +1380,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1393,7 +1393,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1406,7 +1406,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1419,7 +1419,7 @@
    "exit_date": "2026-10-10",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1432,7 +1432,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1445,7 +1445,7 @@
    "exit_date": "2026-09-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1458,7 +1458,7 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1471,7 +1471,7 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1484,7 +1484,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 41,
+   "age_days": 42,
    "legacy_partial_bar": true,
    "independent": false
   },
@@ -1497,7 +1497,7 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 40,
+   "age_days": 41,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1510,7 +1510,7 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 39,
+   "age_days": 40,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1523,7 +1523,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 37,
+   "age_days": 38,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1536,7 +1536,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1549,7 +1549,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1562,7 +1562,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1575,7 +1575,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1588,7 +1588,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1601,7 +1601,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 33,
+   "age_days": 34,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1614,7 +1614,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 33,
+   "age_days": 34,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1627,7 +1627,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 33,
+   "age_days": 34,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1640,7 +1640,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 33,
+   "age_days": 34,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1653,7 +1653,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 33,
+   "age_days": 34,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1666,7 +1666,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1679,7 +1679,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1692,7 +1692,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1705,7 +1705,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1718,7 +1718,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1731,7 +1731,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1744,7 +1744,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1757,7 +1757,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1770,7 +1770,7 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1783,7 +1783,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1796,7 +1796,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1809,7 +1809,7 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 30,
+   "age_days": 31,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1822,7 +1822,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 30,
+   "age_days": 31,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1835,7 +1835,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1848,7 +1848,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1861,7 +1861,7 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1874,7 +1874,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1887,7 +1887,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1900,7 +1900,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1913,7 +1913,7 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 27,
+   "age_days": 28,
    "legacy_partial_bar": true,
    "independent": true
   },
@@ -1926,7 +1926,7 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1939,7 +1939,7 @@
    "exit_date": "2026-10-22",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1952,7 +1952,7 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -1965,7 +1965,7 @@
    "exit_date": "2026-10-22",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1978,7 +1978,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -1991,7 +1991,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 26,
+   "age_days": 27,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2004,7 +2004,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2017,7 +2017,7 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2030,7 +2030,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2043,7 +2043,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2056,7 +2056,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2069,7 +2069,7 @@
    "exit_date": null,
    "R": 0.807,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2082,7 +2082,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2095,7 +2095,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2108,7 +2108,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2121,7 +2121,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2134,7 +2134,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2147,7 +2147,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2160,7 +2160,7 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2173,7 +2173,7 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2186,7 +2186,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2199,7 +2199,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2212,7 +2212,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2225,7 +2225,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2238,7 +2238,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2251,7 +2251,7 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2264,7 +2264,7 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2277,7 +2277,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2290,7 +2290,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2303,7 +2303,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2316,7 +2316,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2329,7 +2329,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2342,7 +2342,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 19,
+   "age_days": 20,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2355,7 +2355,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2368,7 +2368,7 @@
    "exit_date": "2026-10-27",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2381,7 +2381,7 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2394,7 +2394,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2407,7 +2407,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2420,7 +2420,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 17,
+   "age_days": 18,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2433,7 +2433,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2446,7 +2446,7 @@
    "exit_date": null,
    "R": 0.814,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2459,7 +2459,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2472,7 +2472,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2485,7 +2485,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2498,7 +2498,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2511,7 +2511,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2524,7 +2524,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2537,7 +2537,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2550,7 +2550,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2563,7 +2563,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2576,7 +2576,7 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2589,7 +2589,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2602,7 +2602,7 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2615,7 +2615,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2628,7 +2628,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2641,7 +2641,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2654,7 +2654,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2667,7 +2667,7 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2680,7 +2680,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2693,7 +2693,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2706,7 +2706,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2719,7 +2719,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2732,7 +2732,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 12,
+   "age_days": 13,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2745,7 +2745,7 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 12,
+   "age_days": 13,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2758,7 +2758,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2771,7 +2771,7 @@
    "exit_date": null,
    "R": 0.529,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 10,
+   "age_days": 11,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2784,7 +2784,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 10,
+   "age_days": 11,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2797,7 +2797,7 @@
    "exit_date": null,
    "R": -0.018,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2810,7 +2810,7 @@
    "exit_date": null,
    "R": 0.211,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2823,7 +2823,7 @@
    "exit_date": null,
    "R": -0.309,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2836,7 +2836,7 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2849,7 +2849,7 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2862,7 +2862,7 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2875,7 +2875,7 @@
    "exit_date": null,
    "R": -0.263,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2888,7 +2888,7 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 9,
+   "age_days": 10,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2901,7 +2901,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2914,7 +2914,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -2927,7 +2927,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2940,7 +2940,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2953,7 +2953,7 @@
    "exit_date": null,
    "R": -0.564,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2966,7 +2966,7 @@
    "exit_date": null,
    "R": 0.081,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2979,7 +2979,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -2992,7 +2992,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3005,7 +3005,7 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3018,7 +3018,7 @@
    "exit_date": null,
    "R": 0.553,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3031,7 +3031,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3044,7 +3044,7 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 8,
+   "age_days": 9,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3057,7 +3057,7 @@
    "exit_date": null,
    "R": 0.497,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3070,7 +3070,7 @@
    "exit_date": null,
    "R": -0.908,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3083,7 +3083,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3096,7 +3096,7 @@
    "exit_date": null,
    "R": -0.357,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3109,7 +3109,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3122,7 +3122,7 @@
    "exit_date": null,
    "R": 0.012,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3135,7 +3135,7 @@
    "exit_date": null,
    "R": 0.731,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3148,7 +3148,7 @@
    "exit_date": null,
    "R": 0.359,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3161,7 +3161,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3174,7 +3174,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 5,
+   "age_days": 6,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3187,7 +3187,7 @@
    "exit_date": null,
    "R": 0.843,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3200,7 +3200,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 4,
+   "age_days": 5,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3213,7 +3213,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3226,7 +3226,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3239,7 +3239,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3252,7 +3252,7 @@
    "exit_date": null,
    "R": 0.25,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3265,7 +3265,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3278,7 +3278,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3291,7 +3291,7 @@
    "exit_date": null,
    "R": -0.574,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3304,7 +3304,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3317,7 +3317,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3330,7 +3330,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3343,7 +3343,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3356,7 +3356,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3369,7 +3369,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3382,7 +3382,7 @@
    "exit_date": null,
    "R": -0.336,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3395,7 +3395,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3408,7 +3408,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3421,7 +3421,7 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": false
   },
@@ -3434,7 +3434,7 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
    "independent": true
   },
@@ -3447,7 +3447,7 @@
    "exit_date": null,
    "R": -0.4,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
    "independent": false
   }
