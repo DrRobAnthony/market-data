@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-10 11:02:29",
+  "scanned_utc": "2026-11-10 13:37:34",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -23,9 +23,9 @@
       "rsi": 63.6,
       "risk_pct": 3.91,
       "reward_pct": 9.77,
-      "mc30_p5": 262.0964,
+      "mc30_p5": 262.0962,
       "mc30_p50": 293.6976,
-      "mc30_p95": 328.986,
+      "mc30_p95": 328.9848,
       "symbol": "JNJ",
       "asset_class": "stock"
     },
@@ -40,9 +40,9 @@
       "rsi": 61.6,
       "risk_pct": 4.76,
       "reward_pct": 11.9,
-      "mc30_p5": 616.388,
-      "mc30_p50": 731.8615,
-      "mc30_p95": 869.827,
+      "mc30_p5": 616.3881,
+      "mc30_p50": 731.8612,
+      "mc30_p95": 869.8285,
       "symbol": "TMO",
       "asset_class": "stock"
     },
@@ -57,9 +57,9 @@
       "rsi": 66.6,
       "risk_pct": 5.52,
       "reward_pct": 13.79,
-      "mc30_p5": 73.7025,
-      "mc30_p50": 93.2158,
-      "mc30_p95": 120.8945,
+      "mc30_p5": 73.7027,
+      "mc30_p50": 93.2157,
+      "mc30_p95": 120.8948,
       "symbol": "DAL",
       "asset_class": "stock"
     },
