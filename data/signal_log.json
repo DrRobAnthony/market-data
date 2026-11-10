@@ -3111,5 +3111,53 @@
   "atr": 20.07387,
   "rsi": 72.2,
   "first_seen_utc": "2026-11-06 08:04:15"
+ },
+ {
+  "symbol": "JNJ",
+  "date": "2026-11-09",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 282.11,
+  "sl": 271.083424,
+  "tp": 309.676441,
+  "atr": 7.351051,
+  "rsi": 63.6,
+  "first_seen_utc": "2026-11-10 08:25:26"
+ },
+ {
+  "symbol": "TMO",
+  "date": "2026-11-09",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 721.63,
+  "sl": 687.288843,
+  "tp": 807.482892,
+  "atr": 22.894104,
+  "rsi": 61.6,
+  "first_seen_utc": "2026-11-10 08:25:26"
+ },
+ {
+  "symbol": "DAL",
+  "date": "2026-11-09",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 91.8,
+  "sl": 86.734836,
+  "tp": 104.46291,
+  "atr": 3.376776,
+  "rsi": 66.6,
+  "first_seen_utc": "2026-11-10 08:25:26"
+ },
+ {
+  "symbol": "UAL",
+  "date": "2026-11-09",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 120.38,
+  "sl": 112.163797,
+  "tp": 140.920507,
+  "atr": 5.477468,
+  "rsi": 64.8,
+  "first_seen_utc": "2026-11-10 08:25:26"
  }
 ]
