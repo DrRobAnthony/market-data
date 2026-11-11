@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-10 13:37:34",
+  "scanned_utc": "2026-11-11 07:51:04",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -11,74 +11,5 @@
     "rsi_max_long": 80,
     "rsi_min_short": 999
   },
-  "signals": [
-    {
-      "side": "long",
-      "entry": 282.11,
-      "sl": 271.083424,
-      "tp": 309.676441,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-09",
-      "atr": 7.351051,
-      "rsi": 63.6,
-      "risk_pct": 3.91,
-      "reward_pct": 9.77,
-      "mc30_p5": 262.0962,
-      "mc30_p50": 293.6976,
-      "mc30_p95": 328.9848,
-      "symbol": "JNJ",
-      "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 721.63,
-      "sl": 687.288843,
-      "tp": 807.482892,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-09",
-      "atr": 22.894104,
-      "rsi": 61.6,
-      "risk_pct": 4.76,
-      "reward_pct": 11.9,
-      "mc30_p5": 616.3881,
-      "mc30_p50": 731.8612,
-      "mc30_p95": 869.8285,
-      "symbol": "TMO",
-      "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 91.8,
-      "sl": 86.734836,
-      "tp": 104.46291,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-09",
-      "atr": 3.376776,
-      "rsi": 66.6,
-      "risk_pct": 5.52,
-      "reward_pct": 13.79,
-      "mc30_p5": 73.7027,
-      "mc30_p50": 93.2157,
-      "mc30_p95": 120.8948,
-      "symbol": "DAL",
-      "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 120.38,
-      "sl": 112.163797,
-      "tp": 140.920507,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-09",
-      "atr": 5.477468,
-      "rsi": 64.8,
-      "risk_pct": 6.83,
-      "reward_pct": 17.06,
-      "mc30_p5": 92.8041,
-      "mc30_p50": 121.8047,
-      "mc30_p95": 161.4437,
-      "symbol": "UAL",
-      "asset_class": "stock"
-    }
-  ]
+  "signals": []
 }
