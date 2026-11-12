@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-11 12:49:52",
+  "scanned_utc": "2026-11-12 08:22:53",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -11,5 +11,57 @@
     "rsi_max_long": 80,
     "rsi_min_short": 999
   },
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 355.63,
+      "sl": 342.646495,
+      "tp": 388.088763,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-11",
+      "atr": 8.65567,
+      "rsi": 60.4,
+      "risk_pct": 3.65,
+      "reward_pct": 9.13,
+      "mc30_p5": 310.0399,
+      "mc30_p50": 364.6327,
+      "mc30_p95": 430.5632,
+      "symbol": "AAPL",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 1087.61,
+      "sl": 1057.390114,
+      "tp": 1163.159716,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-11",
+      "atr": 20.146591,
+      "rsi": 73.3,
+      "risk_pct": 2.78,
+      "reward_pct": 6.95,
+      "mc30_p5": 974.3796,
+      "mc30_p50": 1096.9078,
+      "mc30_p95": 1236.8049,
+      "symbol": "COST",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 97.57,
+      "sl": 94.901303,
+      "tp": 104.241741,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-11",
+      "atr": 1.779131,
+      "rsi": 69.8,
+      "risk_pct": 2.74,
+      "reward_pct": 6.84,
+      "mc30_p5": 90.3842,
+      "mc30_p50": 100.5646,
+      "mc30_p95": 111.667,
+      "symbol": "KO",
+      "asset_class": "stock"
+    }
+  ]
 }

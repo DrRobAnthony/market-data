@@ -3159,5 +3159,41 @@
   "atr": 5.477468,
   "rsi": 64.8,
   "first_seen_utc": "2026-11-10 08:25:26"
+ },
+ {
+  "symbol": "AAPL",
+  "date": "2026-11-11",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 355.63,
+  "sl": 342.646495,
+  "tp": 388.088763,
+  "atr": 8.65567,
+  "rsi": 60.4,
+  "first_seen_utc": "2026-11-12 08:22:53"
+ },
+ {
+  "symbol": "COST",
+  "date": "2026-11-11",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 1087.61,
+  "sl": 1057.390114,
+  "tp": 1163.159716,
+  "atr": 20.146591,
+  "rsi": 73.3,
+  "first_seen_utc": "2026-11-12 08:22:53"
+ },
+ {
+  "symbol": "KO",
+  "date": "2026-11-11",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 97.57,
+  "sl": 94.901303,
+  "tp": 104.241741,
+  "atr": 1.779131,
+  "rsi": 69.8,
+  "first_seen_utc": "2026-11-12 08:22:53"
  }
 ]
