@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-12 08:22:53",
+  "scanned_utc": "2026-11-12 10:55:59",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -23,9 +23,9 @@
       "rsi": 60.4,
       "risk_pct": 3.65,
       "reward_pct": 9.13,
-      "mc30_p5": 310.0399,
-      "mc30_p50": 364.6327,
-      "mc30_p95": 430.5632,
+      "mc30_p5": 310.04,
+      "mc30_p50": 364.633,
+      "mc30_p95": 430.5638,
       "symbol": "AAPL",
       "asset_class": "stock"
     },
@@ -40,9 +40,9 @@
       "rsi": 73.3,
       "risk_pct": 2.78,
       "reward_pct": 6.95,
-      "mc30_p5": 974.3796,
-      "mc30_p50": 1096.9078,
-      "mc30_p95": 1236.8049,
+      "mc30_p5": 974.3794,
+      "mc30_p50": 1096.908,
+      "mc30_p95": 1236.8058,
       "symbol": "COST",
       "asset_class": "stock"
     },
@@ -57,9 +57,9 @@
       "rsi": 69.8,
       "risk_pct": 2.74,
       "reward_pct": 6.84,
-      "mc30_p5": 90.3842,
+      "mc30_p5": 90.3843,
       "mc30_p50": 100.5646,
-      "mc30_p95": 111.667,
+      "mc30_p95": 111.6668,
       "symbol": "KO",
       "asset_class": "stock"
     }
