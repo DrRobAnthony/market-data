@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-13 08:00:24",
+  "scanned_utc": "2026-11-13 10:36:22",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -23,9 +23,9 @@
       "rsi": 64.0,
       "risk_pct": 3.62,
       "reward_pct": 9.05,
-      "mc30_p5": 262.9305,
-      "mc30_p50": 295.1198,
-      "mc30_p95": 330.2974,
+      "mc30_p5": 262.9302,
+      "mc30_p50": 295.12,
+      "mc30_p95": 330.2973,
       "symbol": "JNJ",
       "asset_class": "stock"
     },
@@ -40,9 +40,9 @@
       "rsi": 74.0,
       "risk_pct": 2.72,
       "reward_pct": 6.8,
-      "mc30_p5": 977.6825,
+      "mc30_p5": 977.6836,
       "mc30_p50": 1102.4761,
-      "mc30_p95": 1241.9999,
+      "mc30_p95": 1241.9995,
       "symbol": "COST",
       "asset_class": "stock"
     }
