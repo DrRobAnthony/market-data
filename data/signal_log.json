@@ -3195,5 +3195,29 @@
   "atr": 1.779131,
   "rsi": 69.8,
   "first_seen_utc": "2026-11-12 08:22:53"
+ },
+ {
+  "symbol": "JNJ",
+  "date": "2026-11-12",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 283.52,
+  "sl": 273.254261,
+  "tp": 309.184348,
+  "atr": 6.843826,
+  "rsi": 64.0,
+  "first_seen_utc": "2026-11-13 08:00:24"
+ },
+ {
+  "symbol": "COST",
+  "date": "2026-11-12",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 1092.21,
+  "sl": 1062.516891,
+  "tp": 1166.442772,
+  "atr": 19.795406,
+  "rsi": 74.0,
+  "first_seen_utc": "2026-11-13 08:00:24"
  }
 ]
