@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-14 10:01:41",
+  "scanned_utc": "2026-11-14 12:24:23",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -24,8 +24,8 @@
       "risk_pct": 2.66,
       "reward_pct": 6.65,
       "mc30_p5": 990.9185,
-      "mc30_p50": 1120.2802,
-      "mc30_p95": 1262.2236,
+      "mc30_p50": 1120.2803,
+      "mc30_p95": 1262.2234,
       "symbol": "COST",
       "asset_class": "stock"
     },
@@ -40,7 +40,7 @@
       "rsi": 73.6,
       "risk_pct": 2.62,
       "reward_pct": 6.55,
-      "mc30_p5": 92.6537,
+      "mc30_p5": 92.6534,
       "mc30_p50": 102.5691,
       "mc30_p95": 113.5845,
       "symbol": "KO",
