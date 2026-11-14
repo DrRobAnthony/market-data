@@ -3219,5 +3219,29 @@
   "atr": 19.795406,
   "rsi": 74.0,
   "first_seen_utc": "2026-11-13 08:00:24"
+ },
+ {
+  "symbol": "COST",
+  "date": "2026-11-13",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 1106.21,
+  "sl": 1076.785327,
+  "tp": 1179.771681,
+  "atr": 19.616448,
+  "rsi": 76.1,
+  "first_seen_utc": "2026-11-14 07:40:56"
+ },
+ {
+  "symbol": "KO",
+  "date": "2026-11-13",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 99.25,
+  "sl": 96.650155,
+  "tp": 105.749614,
+  "atr": 1.73323,
+  "rsi": 73.6,
+  "first_seen_utc": "2026-11-14 07:40:56"
  }
 ]
