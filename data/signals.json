@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-14 12:24:23",
+  "scanned_utc": "2026-11-15 07:51:26",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -15,7 +15,7 @@
     {
       "side": "long",
       "entry": 1106.21,
-      "sl": 1076.785327,
+      "sl": 1076.785328,
       "tp": 1179.771681,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
       "date": "2026-11-13",
@@ -23,9 +23,9 @@
       "rsi": 76.1,
       "risk_pct": 2.66,
       "reward_pct": 6.65,
-      "mc30_p5": 990.9185,
-      "mc30_p50": 1120.2803,
-      "mc30_p95": 1262.2234,
+      "mc30_p5": 990.9178,
+      "mc30_p50": 1120.2802,
+      "mc30_p95": 1262.2236,
       "symbol": "COST",
       "asset_class": "stock"
     },
@@ -40,9 +40,9 @@
       "rsi": 73.6,
       "risk_pct": 2.62,
       "reward_pct": 6.55,
-      "mc30_p5": 92.6534,
+      "mc30_p5": 92.6536,
       "mc30_p50": 102.5691,
-      "mc30_p95": 113.5845,
+      "mc30_p95": 113.5843,
       "symbol": "KO",
       "asset_class": "stock"
     }
