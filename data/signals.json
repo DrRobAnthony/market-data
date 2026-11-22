@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-22 08:07:25",
+  "scanned_utc": "2026-11-22 10:54:59",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
