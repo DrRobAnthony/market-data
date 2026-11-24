@@ -1,11 +1,8 @@
 {
-  "updated_utc": "2026-11-23 16:03:46",
-  "ok": 175,
+  "updated_utc": "2026-11-24 11:04:48",
+  "ok": 178,
   "total": 183,
   "failed": [
-    "005930.KS",
-    "000660.KS",
-    "LAC",
     "KLED",
     "NEST",
     "KNTQ",
@@ -13,13 +10,10 @@
     "SERV"
   ],
   "fail_reasons": {
-    "005930.KS": "yfinance: bad OHLC on 2026-11-23: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
-    "000660.KS": "yfinance: bad OHLC on 2026-11-23: o=nan h=nan l=nan c=nan | stooq: too few rows: 0",
-    "LAC": "yfinance: bad OHLC on 2026-11-23: o=1.39 h=1.3877 l=1.3 c=1.3599 | stooq: too few rows: 0",
     "KLED": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KLED&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']",
     "NEST": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=NEST&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Invalid asset pair']",
-    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: too few rows: 181",
-    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: too few rows: 118",
+    "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: too few rows: 182",
+    "BNKR": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=BNKR&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: too few rows: 119",
     "SERV": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=SERV&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']"
   },
   "signals_found": 0
