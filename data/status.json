@@ -1,8 +1,10 @@
 {
-  "updated_utc": "2026-11-24 13:34:04",
-  "ok": 178,
+  "updated_utc": "2026-11-24 16:21:35",
+  "ok": 176,
   "total": 183,
   "failed": [
+    "005930.KS",
+    "000660.KS",
     "KLED",
     "NEST",
     "KNTQ",
@@ -10,6 +12,8 @@
     "SERV"
   ],
   "fail_reasons": {
+    "005930.KS": "yfinance: bad OHLC on 2026-11-24: o=nan h=nan l=nan c=nan | stooq: GET failed after 3 tries: https://stooq.com/q/d/l/?s=005930.ks.us&i=d (<urlopen error timed out>)",
+    "000660.KS": "yfinance: bad OHLC on 2026-11-24: o=nan h=nan l=nan c=nan | stooq: GET failed after 3 tries: https://stooq.com/q/d/l/?s=000660.ks.us&i=d (<urlopen error timed out>)",
     "KLED": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KLED&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Unknown asset pair']",
     "NEST": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=NEST&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: kraken error: ['EQuery:Invalid asset pair']",
     "KNTQ": "cryptocompare: GET failed after 3 tries: https://min-api.cryptocompare.com/data/v2/histoday?fsym=KNTQ&tsym=USD&allData=true&api_key= (HTTP Error 401: Unauthorized) | kraken: too few rows: 182",
