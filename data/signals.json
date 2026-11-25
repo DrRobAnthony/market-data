@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-24 16:21:35",
+  "scanned_utc": "2026-11-25 09:51:48",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -11,5 +11,57 @@
     "rsi_max_long": 80,
     "rsi_min_short": 999
   },
-  "signals": []
+  "signals": [
+    {
+      "side": "long",
+      "entry": 178.29,
+      "sl": 170.959897,
+      "tp": 196.615259,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-24",
+      "atr": 4.886736,
+      "rsi": 68.8,
+      "risk_pct": 4.11,
+      "reward_pct": 10.28,
+      "mc30_p5": 160.0473,
+      "mc30_p50": 185.7992,
+      "mc30_p95": 218.5422,
+      "symbol": "GILD",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 132.31,
+      "sl": 127.847425,
+      "tp": 143.466438,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-24",
+      "atr": 2.97505,
+      "rsi": 71.6,
+      "risk_pct": 3.37,
+      "reward_pct": 8.43,
+      "mc30_p5": 116.3534,
+      "mc30_p50": 135.3816,
+      "mc30_p95": 155.9778,
+      "symbol": "WMT",
+      "asset_class": "stock"
+    },
+    {
+      "side": "long",
+      "entry": 176.06,
+      "sl": 167.530428,
+      "tp": 197.383929,
+      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
+      "date": "2026-11-24",
+      "atr": 5.686381,
+      "rsi": 69.7,
+      "risk_pct": 4.84,
+      "reward_pct": 12.11,
+      "mc30_p5": 148.033,
+      "mc30_p50": 179.2925,
+      "mc30_p95": 216.7381,
+      "symbol": "TGT",
+      "asset_class": "stock"
+    }
+  ]
 }

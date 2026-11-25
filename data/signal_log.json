@@ -3279,5 +3279,41 @@
   "atr": 3.269438,
   "rsi": 73.1,
   "first_seen_utc": "2026-11-17 09:09:26"
+ },
+ {
+  "symbol": "GILD",
+  "date": "2026-11-24",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 178.29,
+  "sl": 170.959897,
+  "tp": 196.615259,
+  "atr": 4.886736,
+  "rsi": 68.8,
+  "first_seen_utc": "2026-11-25 09:51:48"
+ },
+ {
+  "symbol": "WMT",
+  "date": "2026-11-24",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 132.31,
+  "sl": 127.847425,
+  "tp": 143.466438,
+  "atr": 2.97505,
+  "rsi": 71.6,
+  "first_seen_utc": "2026-11-25 09:51:48"
+ },
+ {
+  "symbol": "TGT",
+  "date": "2026-11-24",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 176.06,
+  "sl": 167.530428,
+  "tp": 197.383929,
+  "atr": 5.686381,
+  "rsi": 69.7,
+  "first_seen_utc": "2026-11-25 09:51:48"
  }
 ]
