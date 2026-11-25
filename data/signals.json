@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-25 09:51:48",
+  "scanned_utc": "2026-11-25 12:20:41",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -25,7 +25,7 @@
       "reward_pct": 10.28,
       "mc30_p5": 160.0473,
       "mc30_p50": 185.7992,
-      "mc30_p95": 218.5422,
+      "mc30_p95": 218.5426,
       "symbol": "GILD",
       "asset_class": "stock"
     },
@@ -41,7 +41,7 @@
       "risk_pct": 3.37,
       "reward_pct": 8.43,
       "mc30_p5": 116.3534,
-      "mc30_p50": 135.3816,
+      "mc30_p50": 135.3818,
       "mc30_p95": 155.9778,
       "symbol": "WMT",
       "asset_class": "stock"
@@ -57,9 +57,9 @@
       "rsi": 69.7,
       "risk_pct": 4.84,
       "reward_pct": 12.11,
-      "mc30_p5": 148.033,
-      "mc30_p50": 179.2925,
-      "mc30_p95": 216.7381,
+      "mc30_p5": 148.0331,
+      "mc30_p50": 179.2931,
+      "mc30_p95": 216.7387,
       "symbol": "TGT",
       "asset_class": "stock"
     }
