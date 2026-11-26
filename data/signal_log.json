@@ -3315,5 +3315,29 @@
   "atr": 5.686381,
   "rsi": 69.7,
   "first_seen_utc": "2026-11-25 09:51:48"
+ },
+ {
+  "symbol": "DIS",
+  "date": "2026-11-25",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 125.6,
+  "sl": 120.788967,
+  "tp": 137.627582,
+  "atr": 3.207355,
+  "rsi": 68.9,
+  "first_seen_utc": "2026-11-26 09:32:11"
+ },
+ {
+  "symbol": "SO",
+  "date": "2026-11-25",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 95.0,
+  "sl": 92.357829,
+  "tp": 101.605428,
+  "atr": 1.761447,
+  "rsi": 62.8,
+  "first_seen_utc": "2026-11-26 09:32:11"
  }
 ]
