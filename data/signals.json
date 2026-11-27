@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-26 15:07:02",
+  "scanned_utc": "2026-11-27 09:45:26",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -40,9 +40,9 @@
       "rsi": 62.8,
       "risk_pct": 2.78,
       "reward_pct": 6.95,
-      "mc30_p5": 86.3455,
-      "mc30_p50": 95.6514,
-      "mc30_p95": 105.7327,
+      "mc30_p5": 86.3454,
+      "mc30_p50": 95.6513,
+      "mc30_p95": 105.7328,
       "symbol": "SO",
       "asset_class": "stock"
     }
