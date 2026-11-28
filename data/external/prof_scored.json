@@ -1,0 +1,665 @@
+{
+ "summary": {
+  "all_calls": 93,
+  "no_data": 93,
+  "no_fill": 0,
+  "scored": {},
+  "longs": {},
+  "shorts": {},
+  "cmp_entries": {},
+  "limit_entries": {}
+ },
+ "results": [
+  {
+   "status": "no_data",
+   "t": "2025-05-05T04:23:27",
+   "sym": "OM",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-11T19:25:12",
+   "sym": "AUCTION",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-12T09:01:45",
+   "sym": "SOL",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-14T00:59:54",
+   "sym": "MAVIA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-18T13:05:35",
+   "sym": "BTC",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-21T04:52:58",
+   "sym": "BTC",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-23T01:53:56",
+   "sym": "MERL",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-28T07:49:51",
+   "sym": "HMSTR",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-05-28T09:59:55",
+   "sym": "SUI",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-01T11:56:37",
+   "sym": "MASK",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-02T10:40:42",
+   "sym": "MERL",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-04T10:21:14",
+   "sym": "ETH",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-11T04:59:09",
+   "sym": "ETH",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-11T17:06:01",
+   "sym": "ETH",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-12T10:48:14",
+   "sym": "FARTCOIN",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-12T15:56:46",
+   "sym": "AAVE",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-13T13:30:38",
+   "sym": "BTC",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-16T07:34:05",
+   "sym": "JTO",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-16T13:50:28",
+   "sym": "BTC",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-06-16T17:41:40",
+   "sym": "ETH",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-09T13:16:59",
+   "sym": "INIT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-10T09:16:14",
+   "sym": "M",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-10T11:35:23",
+   "sym": "H",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-11T11:21:26",
+   "sym": "XRP",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-13T07:27:57",
+   "sym": "OG",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-13T10:32:03",
+   "sym": "AAVE",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-14T09:34:50",
+   "sym": "SUI",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-14T10:53:28",
+   "sym": "XRP",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-16T09:48:56",
+   "sym": "UNI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-16T19:12:14",
+   "sym": "1000FLOKI",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-17T15:06:38",
+   "sym": "TRUMP",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-17T20:56:10",
+   "sym": "UNI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-19T16:53:21",
+   "sym": "BANANAS31",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-07-31T20:04:16",
+   "sym": "BTC",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-04T04:41:22",
+   "sym": "BTC",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-06T05:12:07",
+   "sym": "NAORIS",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-06T10:53:53",
+   "sym": "USELESS",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-07T13:12:26",
+   "sym": "CVX",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-10T12:16:13",
+   "sym": "OG",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-12T16:43:17",
+   "sym": "WCT",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-14T16:36:03",
+   "sym": "ETH",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-18T11:22:19",
+   "sym": "BIO",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-19T10:01:22",
+   "sym": "API3",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-22T03:11:53",
+   "sym": "BIO",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-24T00:18:35",
+   "sym": "PROMPT",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-08-24T02:22:46",
+   "sym": "API3",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-01T14:22:36",
+   "sym": "WLFI",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-05T09:32:29",
+   "sym": "ETH",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-06T04:36:43",
+   "sym": "OMNI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-06T11:57:02",
+   "sym": "PYTH",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-07T06:50:56",
+   "sym": "BABYDOGE",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-07T13:32:12",
+   "sym": "TA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-08T08:48:46",
+   "sym": "SOL",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-09T06:54:12",
+   "sym": "ARKM",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-10T06:00:07",
+   "sym": "BAKE",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-10T10:58:19",
+   "sym": "PENGU",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-10T12:08:11",
+   "sym": "NAORIS",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-11T16:38:13",
+   "sym": "MYX",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-13T06:52:24",
+   "sym": "LINEA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-15T14:27:53",
+   "sym": "TAKE",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-16T06:18:55",
+   "sym": "ZKC",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-19T14:23:37",
+   "sym": "AVNT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-21T06:59:49",
+   "sym": "Q",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-21T20:25:10",
+   "sym": "ASTER",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-23T05:34:51",
+   "sym": "FLOCK",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-24T06:12:46",
+   "sym": "AIA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-24T16:09:29",
+   "sym": "STBL",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-26T05:23:44",
+   "sym": "BTR",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-28T11:10:39",
+   "sym": "BLESS",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-09-29T12:24:56",
+   "sym": "0G",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-10-03T06:33:12",
+   "sym": "EDEN",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-10-03T06:37:59",
+   "sym": "LIGHT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-10-03T11:16:17",
+   "sym": "BNB",
+   "side": "SHORT",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-10-04T10:23:52",
+   "sym": "APT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-04T08:14:39",
+   "sym": "COAI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-05T11:13:54",
+   "sym": "COAI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-07T11:16:27",
+   "sym": "MAVIA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-07T11:29:26",
+   "sym": "LINEA",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-07T11:47:16",
+   "sym": "LYN",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-08T07:23:39",
+   "sym": "MOVR",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-08T10:41:04",
+   "sym": "AVNT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-08T13:36:38",
+   "sym": "ILV",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-09T11:01:34",
+   "sym": "UNI",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-10T08:47:42",
+   "sym": "AT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-10T14:09:30",
+   "sym": "MELANIA",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-11T03:27:11",
+   "sym": "PROMPT",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-12T05:43:06",
+   "sym": "GIGGLE",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-15T00:22:40",
+   "sym": "RIVER",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-15T00:44:18",
+   "sym": "ZEC",
+   "side": "SHORT",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2025-11-15T06:08:28",
+   "sym": "CLANKER",
+   "side": "LONG",
+   "cmp": true
+  },
+  {
+   "status": "no_data",
+   "t": "2026-04-05T08:41:11",
+   "sym": "MMT",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2026-10-15T07:43:22",
+   "sym": "ZEC",
+   "side": "LONG",
+   "cmp": false
+  },
+  {
+   "status": "no_data",
+   "t": "2026-10-15T16:38:46",
+   "sym": "ZEREBRO",
+   "side": "LONG",
+   "cmp": false
+  }
+ ]
+}
