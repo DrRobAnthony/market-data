@@ -1,13 +1,63 @@
 {
  "summary": {
   "all_calls": 93,
-  "no_data": 93,
-  "no_fill": 0,
-  "scored": {},
-  "longs": {},
-  "shorts": {},
-  "cmp_entries": {},
-  "limit_entries": {}
+  "no_data": 78,
+  "no_fill": 1,
+  "scored": {
+   "n": 14,
+   "stopped_out_pct": 42.9,
+   "hit_1R_then_breakeven_pct": 21.4,
+   "hit_2R_pct": 35.7,
+   "timeout_pct": 0.0,
+   "any_profit_pct": 57.1,
+   "avg_R": 0.204,
+   "total_R": 2.9,
+   "control_avg_R": -0.162
+  },
+  "longs": {
+   "n": 13,
+   "stopped_out_pct": 46.2,
+   "hit_1R_then_breakeven_pct": 23.1,
+   "hit_2R_pct": 30.8,
+   "timeout_pct": 0.0,
+   "any_profit_pct": 53.8,
+   "avg_R": 0.104,
+   "total_R": 1.4,
+   "control_avg_R": -0.137
+  },
+  "shorts": {
+   "n": 1,
+   "stopped_out_pct": 0.0,
+   "hit_1R_then_breakeven_pct": 0.0,
+   "hit_2R_pct": 100.0,
+   "timeout_pct": 0.0,
+   "any_profit_pct": 100.0,
+   "avg_R": 1.495,
+   "total_R": 1.5,
+   "control_avg_R": -0.48
+  },
+  "cmp_entries": {
+   "n": 10,
+   "stopped_out_pct": 60.0,
+   "hit_1R_then_breakeven_pct": 30.0,
+   "hit_2R_pct": 10.0,
+   "timeout_pct": 0.0,
+   "any_profit_pct": 40.0,
+   "avg_R": -0.307,
+   "total_R": -3.1,
+   "control_avg_R": -0.068
+  },
+  "limit_entries": {
+   "n": 4,
+   "stopped_out_pct": 0.0,
+   "hit_1R_then_breakeven_pct": 0.0,
+   "hit_2R_pct": 100.0,
+   "timeout_pct": 0.0,
+   "any_profit_pct": 100.0,
+   "avg_R": 1.481,
+   "total_R": 5.9,
+   "control_avg_R": -0.396
+  }
  },
  "results": [
   {
@@ -543,14 +593,22 @@
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.009,
+   "why": "stop",
+   "stop_pct": 11.69,
+   "control_R": 0.166,
    "t": "2025-11-07T11:16:27",
    "sym": "MAVIA",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.005,
+   "why": "stop",
+   "stop_pct": 20.63,
+   "control_R": -0.749,
    "t": "2025-11-07T11:29:26",
    "sym": "LINEA",
    "side": "LONG",
@@ -564,56 +622,88 @@
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.008,
+   "why": "stop",
+   "stop_pct": 13.31,
+   "control_R": -0.483,
    "t": "2025-11-08T07:23:39",
    "sym": "MOVR",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.006,
+   "why": "stop",
+   "stop_pct": 18.05,
+   "control_R": -0.056,
    "t": "2025-11-08T10:41:04",
    "sym": "AVNT",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 0.488,
+   "why": "win_then_be",
+   "stop_pct": 8.7,
+   "control_R": -0.212,
    "t": "2025-11-08T13:36:38",
    "sym": "ILV",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 1.494,
+   "why": "win_2R",
+   "stop_pct": 17.42,
+   "control_R": 0.181,
    "t": "2025-11-09T11:01:34",
    "sym": "UNI",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.006,
+   "why": "stop",
+   "stop_pct": 16.52,
+   "control_R": 0.269,
    "t": "2025-11-10T08:47:42",
    "sym": "AT",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 1.495,
+   "why": "win_2R",
+   "stop_pct": 18.23,
+   "control_R": -0.48,
    "t": "2025-11-10T14:09:30",
    "sym": "MELANIA",
    "side": "SHORT",
    "cmp": false
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 0.493,
+   "why": "win_then_be",
+   "stop_pct": 13.7,
+   "control_R": -0.032,
    "t": "2025-11-11T03:27:11",
    "sym": "PROMPT",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": -1.008,
+   "why": "stop",
+   "stop_pct": 13.3,
+   "control_R": -0.183,
    "t": "2025-11-12T05:43:06",
    "sym": "GIGGLE",
    "side": "LONG",
@@ -627,35 +717,51 @@
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "no_fill",
    "t": "2025-11-15T00:44:18",
    "sym": "ZEC",
    "side": "SHORT",
    "cmp": false
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 0.494,
+   "why": "win_then_be",
+   "stop_pct": 16.46,
+   "control_R": 0.419,
    "t": "2025-11-15T06:08:28",
    "sym": "CLANKER",
    "side": "LONG",
    "cmp": true
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 1.478,
+   "why": "win_2R",
+   "stop_pct": 4.51,
+   "control_R": -0.297,
    "t": "2026-04-05T08:41:11",
    "sym": "MMT",
    "side": "LONG",
    "cmp": false
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 1.459,
+   "why": "win_2R",
+   "stop_pct": 2.46,
+   "control_R": -0.391,
    "t": "2026-10-15T07:43:22",
    "sym": "ZEC",
    "side": "LONG",
    "cmp": false
   },
   {
-   "status": "no_data",
+   "status": "scored",
+   "R": 1.493,
+   "why": "win_2R",
+   "stop_pct": 15.0,
+   "control_R": -0.416,
    "t": "2026-10-15T16:38:46",
    "sym": "ZEREBRO",
    "side": "LONG",
