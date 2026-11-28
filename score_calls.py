@@ -22,28 +22,35 @@ random.seed(7)
 
 
 def get(url):
-    if KEY:
-        url += "&api_key=" + KEY
-    with urllib.request.urlopen(url, timeout=30) as r:
+    req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
 
 
-def bars(sym, end_ts, n=2000):
+def bars(sym, end_ts, n=None):
+    """Hourly candles from Gate.io's public API (no key, works from GitHub), 45 days ending at end_ts."""
     mult = 1
     if sym.startswith("1000") and len(sym) > 4:
         sym, mult = sym[4:], 1000
-    for quote in ("USDT", "USD"):
-        try:
-            q = urllib.parse.urlencode({"fsym": sym, "tsym": quote, "limit": n, "toTs": end_ts})
-            d = get("https://min-api.cryptocompare.com/data/v2/histohour?" + q)
-            rows = [b for b in d.get("Data", {}).get("Data", []) if b["close"] > 0]
-            if len(rows) > 24:
-                return [{"t": b["time"], "o": b["open"]*mult, "h": b["high"]*mult,
-                         "l": b["low"]*mult, "c": b["close"]*mult} for b in rows]
-        except Exception as e:
-            print("fetch error", sym, quote, e, file=sys.stderr)
-        time.sleep(0.3)
-    return None
+    start = end_ts - 45 * 24 * H
+    rows = {}
+    t0 = start
+    try:
+        while t0 < end_ts:
+            t1 = min(end_ts, t0 + 900 * H)
+            q = urllib.parse.urlencode({"currency_pair": f"{sym}_USDT", "interval": "1h",
+                                        "from": t0, "to": t1})
+            data = get("https://api.gateio.ws/api/v4/spot/candlesticks?" + q)
+            for c in data:
+                ts = int(c[0]); rows[ts] = {"t": ts, "o": float(c[5])*mult, "h": float(c[3])*mult,
+                                            "l": float(c[4])*mult, "c": float(c[2])*mult}
+            t0 = t1
+            time.sleep(0.15)
+    except Exception as e:
+        print("fetch error", sym, e, file=sys.stderr)
+        return None
+    out = [rows[k] for k in sorted(rows) if rows[k]["c"] > 0]
+    return out if len(out) > 24 else None
 
 
 def run_trade(B, i0, side, entry, stop):
