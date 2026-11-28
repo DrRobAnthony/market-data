@@ -24,6 +24,9 @@ import time
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import indicators  # shared per-bar maths (status log, ledger benchmark)
+
 try:
     import yfinance as yf
 except ImportError:
@@ -53,6 +56,21 @@ KRAKEN_PAIRS = {"BTC": "XBTUSD", "ETH": "ETHUSD", "SOL": "SOLUSD",
 PARAMS = {"ema_fast": 50, "ema_slow": 200, "atr_n": 14, "breakout_n": 55,
           "sl_atr": 1.5, "tp_atr": 3.75, "rsi_max_long": 80,
           "rsi_min_short": 999}
+
+# ---- Rob's two stipulations (added 2026-11-27) ----
+# 1) Only buy companies whose revenue AND net income rose every year.
+#    fundamentals.py maintains data/fundamentals.json (status: pass / fail /
+#    no_data / error); crypto is "not_applicable". A breakout is emailed only
+#    if its status is in ELIGIBLE_FUNDAMENTALS. ETFs and crypto have no
+#    revenue or profit, so they are NOT eligible by default. To also allow
+#    them, add "no_data" (ETFs) and "not_applicable" (crypto) to the set.
+ELIGIBLE_FUNDAMENTALS = {"pass"}
+# 2) Size every position so a 50% drop does not force a sale: the most the
+#    account may lose if ONE position halves, as % of the account. 5.0 is a
+#    placeholder until Rob sets his own number: the position-size cap is
+#    this value / 0.5, so 5.0 -> no position above 10% of the account.
+MAX_LOSS_IF_HALVED_PCT = 5.0
+FUND_FILE = DATA / "fundamentals.json"
 
 
 # ---------------- data fetching ----------------
@@ -293,9 +311,114 @@ def append_signal_log(signals, now):
             continue
         log.append({k: s[k] for k in ("symbol", "date", "asset_class", "side",
                                       "entry", "sl", "tp", "atr", "rsi")}
-                   | {"first_seen_utc": now})
+                   | {"first_seen_utc": now,
+                      "fundamentals": s.get("fundamentals"),
+                      "eligible": s.get("eligible")})
         added += 1
     SIGNAL_LOG.write_text(json.dumps(log, indent=1))
+    return added
+
+
+# ---------------- fundamentals screen + position cap ----------------
+
+def load_fundamentals():
+    try:
+        return json.loads(FUND_FILE.read_text())
+    except Exception:
+        return {}
+
+
+def fundamentals_status(symbol, group, fund):
+    """pass / fail / no_data / error (from fundamentals.py) or not_applicable."""
+    if group == "crypto":
+        return "not_applicable"
+    entry = fund.get(symbol)
+    return entry["status"] if entry else "no_data"
+
+
+SKIP_TEXT = {
+    "fail": "revenue and/or profit did not rise every year",
+    "no_data": "no company financials available (ETF, fund, or Yahoo has none)",
+    "error": "financials could not be fetched",
+    "not_applicable": "crypto has no revenue or profit",
+}
+
+
+def decorate_signal(sig, group, fund, p=PARAMS):
+    """Add the growth-screen verdict and the position-size cap to a signal."""
+    status = fundamentals_status(sig["symbol"], group, fund)
+    sig["fundamentals"] = status
+    sig["eligible"] = status in ELIGIBLE_FUNDAMENTALS
+    sig["skip_reason"] = None if sig["eligible"] else SKIP_TEXT.get(status, status)
+    cap = round(MAX_LOSS_IF_HALVED_PCT / 0.5, 2)       # % of account
+    sig["max_position_pct"] = cap
+    sig["position_pct"] = round(min(100 / sig["risk_pct"], cap), 2)
+    sig["loss_if_halved_pct"] = round(sig["position_pct"] * 0.5, 2)
+    sig["loss_at_stop_pct"] = round(sig["position_pct"] * sig["risk_pct"] / 100, 2)
+    return sig
+
+
+# ---------------- nightly per-symbol status log ----------------
+
+SCAN_LOG_DIR = DATA / "scan_log"
+SCAN_LOG_COLS = ["bar_date", "scan_date_utc", "symbol", "asset_class", "status",
+                 "close", "atr", "rsi", "ema50", "ema200", "don_hi", "trend",
+                 "signal", "fundamentals"]
+
+
+def status_row(symbol, group, rows, scan_date, fund, p=PARAMS):
+    """One row describing where `symbol` stood on its last completed bar."""
+    base = {"scan_date_utc": scan_date, "symbol": symbol, "asset_class": group,
+            "fundamentals": fundamentals_status(symbol, group, fund)}
+    if not rows:
+        return dict(base, bar_date="", status="no_bars")
+    ser = indicators.series(rows, p)
+    i = len(rows) - 1
+    row = dict(base, bar_date=rows[i][0], close=rows[i][4])
+    if not ser["warm"][i]:
+        return dict(row, status="warmup")
+    c = [r[4] for r in rows]
+    cls = indicators.classify(ser, c, i, p)
+    return dict(row, status="ok", atr=round(ser["atr"][i], 6),
+                rsi=round(ser["rsi"][i], 1), ema50=round(ser["ef"][i], 6),
+                ema200=round(ser["es"][i], 6), don_hi=round(ser["don_hi"][i], 6),
+                trend=int(cls in ("signal", "uptrend")),
+                signal=int(cls == "signal"))
+
+
+def append_scan_log(rows_in):
+    """Append to data/scan_log/YYYY-MM.csv, idempotent across reruns.
+
+    Key: (bar_date, symbol) for rows with a bar; (scan_date_utc, symbol) for
+    failures. First sighting wins. Returns the number of rows added.
+    """
+    SCAN_LOG_DIR.mkdir(exist_ok=True)
+    by_month = {}
+    for r in rows_in:
+        month = (r["bar_date"] or r["scan_date_utc"])[:7]
+        by_month.setdefault(month, []).append(r)
+    added = 0
+    for month, new in by_month.items():
+        path = SCAN_LOG_DIR / f"{month}.csv"
+        def key_of(rec):
+            return (rec["bar_date"] or "F" + rec["scan_date_utc"]) + "|" + rec["symbol"]
+
+        have = {}
+        if path.exists():
+            with path.open() as f:
+                for rec in csv.DictReader(f):
+                    have[key_of(rec)] = rec
+        for r in new:
+            key = key_of(r)
+            if key not in have:
+                have[key] = {k: r.get(k, "") for k in SCAN_LOG_COLS}
+                added += 1
+        with path.open("w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=SCAN_LOG_COLS)
+            w.writeheader()
+            for rec in sorted(have.values(),
+                              key=lambda x: (x["bar_date"] or x["scan_date_utc"], x["symbol"])):
+                w.writerow(rec)
     return added
 
 
@@ -303,6 +426,9 @@ def append_signal_log(signals, now):
 
 def main():
     wl = json.loads(Path("watchlist.json").read_text())
+    fund = load_fundamentals()
+    scan_date = time.strftime("%Y-%m-%d", time.gmtime())
+    scan_rows = []
     failures = []
     fail_reasons = {}
     signals = []
@@ -319,6 +445,10 @@ def main():
             if not ok:
                 failures.append(sym)
                 fail_reasons[sym] = reason
+                scan_rows.append({"scan_date_utc": scan_date, "symbol": sym,
+                                  "asset_class": group, "status": "failed",
+                                  "bar_date": "", "fundamentals":
+                                  fundamentals_status(sym, group, fund)})
             else:
                 rows = []
                 with (DATA / f"{sym}.csv").open() as f:
@@ -327,13 +457,18 @@ def main():
                                      float(rec["high"]), float(rec["low"]),
                                      float(rec["close"]),
                                      float(rec["volume"])))
-                sig = scan_symbol(completed_bars(rows))
+                done = completed_bars(rows)
+                scan_rows.append(status_row(sym, group, done, scan_date, fund))
+                sig = scan_symbol(done)
                 if sig:
                     sig["symbol"] = sym
                     sig["asset_class"] = group
+                    decorate_signal(sig, group, fund)
                     signals.append(sig)
                     print(f"  *** SIGNAL: {sig['side'].upper()} "
-                          f"entry={sig['entry']} sl={sig['sl']} tp={sig['tp']}")
+                          f"entry={sig['entry']} sl={sig['sl']} tp={sig['tp']} "
+                          f"growth-screen={sig['fundamentals']} "
+                          f"eligible={sig['eligible']}")
             time.sleep(2)
 
     total = len(wl.get("stocks", [])) + len(wl.get("cryptos", []))
@@ -341,12 +476,20 @@ def main():
     Path("data/status.json").write_text(json.dumps(
         {"updated_utc": now, "ok": total - len(failures), "total": total,
          "failed": failures, "fail_reasons": fail_reasons,
-         "signals_found": len(signals)}, indent=2))
+         "signals_found": len(signals),
+         "signals_eligible": sum(1 for s in signals if s["eligible"]),
+         # growth-screen data health: if pass+fail is 0 the financials fetch
+         # is broken and every stock breakout is being skipped
+         "fundamentals": {k: sum(1 for s in wl.get("stocks", [])
+                                 if fund.get(s, {}).get("status", "missing") == k)
+                          for k in ("pass", "fail", "no_data", "error", "missing")}},
+        indent=2))
     Path("data/signals.json").write_text(json.dumps(
         {"scanned_utc": now, "strategy": "daily trend-breakout v1",
          "params": PARAMS, "signals": signals}, indent=2))
     added = append_signal_log(signals, now)
     print(f"signal_log: {added} new")
+    print(f"scan_log: {append_scan_log(scan_rows)} new rows")
     print(json.dumps({"failures": failures, "signals": len(signals)}))
 
 

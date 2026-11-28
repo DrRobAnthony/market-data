@@ -32,6 +32,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Refresh company financials (growth screen)
+        continue-on-error: true
+        run: python fundamentals.py
+
       - name: Fetch market data and scan
         run: python fetch_data.py
 
@@ -49,8 +53,13 @@ jobs:
           sent_path = Path("data/emailed.json")
           sent = json.loads(sent_path.read_text()) if sent_path.exists() else []
           sent_keys = set(sent)
+          # growth screen: only eligible breakouts are emailed; the rest are
+          # still logged in data/signal_log.json so the screen can be judged
+          skipped = [s for s in sig.get("signals", [])
+                     if not s.get("eligible", True)]
           new = [s for s in sig.get("signals", [])
-                 if f"{s['symbol']}|{s['date']}" not in sent_keys]
+                 if s.get("eligible", True)
+                 and f"{s['symbol']}|{s['date']}" not in sent_keys]
           if new:
               parts = ["<div style='font-family:Arial,sans-serif;max-width:640px'>",
                        f"<h2>Trade Signals — {len(new)} new setup(s)</h2>"]
@@ -64,7 +73,11 @@ jobs:
                       f"(+{s['reward_pct']}%, 1:{s['reward_pct'] / s['risk_pct']:.1f} R:R)<br>"
                       f"RSI {s['rsi']} | 30-day range ${s['mc30_p5']} – "
                       f"${s['mc30_p95']} (median ${s['mc30_p50']})<br>"
-                      f"<i>{html.escape(s['thesis'])}</i></div>")
+                      f"<i>{html.escape(s['thesis'])}</i><br>"
+                      f"Position: up to {s.get('position_pct', '?')}% of account "
+                      f"(cap {s.get('max_position_pct', '?')}%). If it halves you "
+                      f"lose {s.get('loss_if_halved_pct', '?')}% of the account; "
+                      f"if it hits the stop, {s.get('loss_at_stop_pct', '?')}%.</div>")
               track = ""
               try:
                   p = sig["params"]
@@ -81,8 +94,18 @@ jobs:
                   if ref:
                       track += f" (backtest {ref['expectancy_R']:+.2f}R)"
                   track += ". "
+                  bm = led["summary"].get("benchmark", {}).get("eras", {}).get(key)
+                  if bm and bm["any_day"]["avg_R_incl_open"] is not None:
+                      track += (f"Same period and stops, entering on random days "
+                                f"instead: avg {bm['any_day']['avg_R_incl_open']:+.2f}R "
+                                f"vs {bm['breakout_rule']['avg_R_incl_open']:+.2f}R "
+                                f"for the breakout rule. ")
               except Exception:
                   track = "Live record: see data/ledger.json. "
+              if skipped:
+                  track += (f"{len(skipped)} other breakout(s) skipped by the "
+                            f"growth screen (revenue and profit up every year): "
+                            + ", ".join(s["symbol"] for s in skipped[:15]) + ". ")
               parts.append("<p style='color:#777;font-size:13px'>Strategy: daily "
                            "trend-breakout, long-only. " + track +
                            "Signals are information, not orders. Not financial "

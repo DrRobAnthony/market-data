@@ -25,6 +25,12 @@ from pathlib import Path
 
 DATA = Path("data")
 
+import re
+import sys as _sys
+
+_sys.path.insert(0, str(Path(__file__).resolve().parent))
+import indicators  # same maths the scanner uses (see indicators.py docstring)
+
 # Reference only: replay of the scanner rules over 176 symbols, 2022 onward,
 # gross of costs, on a watchlist chosen with hindsight (optimistic).
 BACKTEST_REF = {
@@ -87,6 +93,104 @@ def summarize(rows):
     }
 
 
+def run_benchmark(log, today):
+    """Would random entries have done as well as the breakout rule?
+
+    For every settings era in the stock signal log, take the SAME stocks over
+    the SAME dates and score three groups of entries with the SAME stop and
+    target multiples and the SAME scoring as the live signals (TP, SL, or open
+    marked to the last completed close, in R):
+      breakout_rule        the scanner's own long rule, recomputed from prices
+      uptrend_no_breakout  trend filter passes but no breakout
+      any_day              every day, no filter (the random-entry benchmark)
+    If breakout_rule is not clearly above any_day, the rule adds nothing.
+    Stocks only (crypto history is too short). Gross of costs.
+    """
+    try:
+        wl = json.loads(Path("watchlist.json").read_text())
+        sj = json.loads((DATA / "signals.json").read_text())
+    except Exception:
+        return None
+    p = dict(indicators.DEFAULT_PARAMS)
+    p.update({k: v for k, v in (sj.get("params") or {}).items() if k in p})
+    stock_sigs = [s for s in log if s["asset_class"] == "stock"]
+    if not stock_sigs:
+        return None
+    eras = {}
+    for s in stock_sigs:
+        risk = abs(s["entry"] - s["sl"])
+        key = (f"SL{round(risk / s['atr'], 2)}xATR/"
+               f"TP{round(abs(s['tp'] - s['entry']) / s['atr'], 2)}xATR")
+        eras.setdefault(key, []).append(s["date"])
+    ordered = sorted(eras.items(), key=lambda kv: min(kv[1]))
+    windows = {}
+    for n, (key, dates) in enumerate(ordered):
+        start = min(dates)
+        if n + 1 < len(ordered):
+            nxt = min(ordered[n + 1][1])
+            end = time.strftime("%Y-%m-%d", time.gmtime(
+                time.mktime(time.strptime(nxt, "%Y-%m-%d")) - 86400))
+        else:
+            end = today
+        windows[key] = (start, end)
+    acc = {k: {"breakout_rule": [], "uptrend_no_breakout": [], "any_day": []}
+           for k in windows}
+    names = {"signal": "breakout_rule", "uptrend": "uptrend_no_breakout"}
+    universe = 0
+    for sym in dict.fromkeys(wl.get("stocks", [])):
+        bars = completed(load_bars(sym), today)
+        if len(bars) < 300:
+            continue
+        universe += 1
+        ser = indicators.series(bars, p)
+        d = [b[0] for b in bars]
+        h = [b[2] for b in bars]
+        l = [b[3] for b in bars]
+        c = [b[4] for b in bars]
+        for key, (a, b) in windows.items():
+            m = re.match(r"SL([\d.]+)xATR/TP([\d.]+)xATR", key)
+            ksl, ktp = float(m.group(1)), float(m.group(2))
+            for i in range(len(d)):
+                if d[i] < a or d[i] > b or not ser["warm"][i]:
+                    continue
+                cls = indicators.classify(ser, c, i, p)
+                risk = ksl * ser["atr"][i]
+                sl, tp = c[i] - risk, c[i] + ktp * ser["atr"][i]
+                result = "OPEN"
+                for j in range(i + 1, len(c)):
+                    if l[j] <= sl:
+                        result = "SL"
+                        break
+                    if h[j] >= tp:
+                        result = "TP"
+                        break
+                r = (ktp / ksl if result == "TP" else -1.0 if result == "SL"
+                     else (c[-1] - c[i]) / risk)
+                row = {"result": result, "R": r}
+                acc[key]["any_day"].append(row)
+                if cls in names:
+                    acc[key][names[cls]].append(row)
+    out = {"note": ("Stocks only, same dates, same stops, same scoring as the "
+                    "live signals. breakout_rule vs any_day is the test: if the "
+                    "rule does not beat random entries, it has no edge here. "
+                    "Gross of costs; watchlist is today's names (hindsight)."),
+           "universe_stocks": universe, "eras": {}}
+    for key, (a, b) in windows.items():
+        g = acc[key]
+        any_r = summarize(g["any_day"])["avg_R_incl_open"]
+        brk = summarize(g["breakout_rule"])
+        out["eras"][key] = {
+            "window": [a, b],
+            "live_stock_signals": None,   # filled by main() from scored rows
+            "breakout_rule": brk,
+            "uptrend_no_breakout": summarize(g["uptrend_no_breakout"]),
+            "any_day": summarize(g["any_day"]),
+            "breakout_minus_any_day_R": (
+                None if brk["avg_R_incl_open"] is None or any_r is None
+                else round(brk["avg_R_incl_open"] - any_r, 2))}
+    return out
+
+
 def main():
     log = json.loads((DATA / "signal_log.json").read_text())
     today = time.strftime("%Y-%m-%d", time.gmtime())
@@ -117,7 +221,9 @@ def main():
                      "asset_class": sig["asset_class"], "side": sig["side"],
                      "result": result, "exit_date": exit_date, "R": round(r, 3),
                      "settings": f"SL{ksl}xATR/TP{ktp}xATR", "age_days": int(age),
-                     "legacy_partial_bar": bool(sig.get("legacy_partial_bar"))})
+                     "legacy_partial_bar": bool(sig.get("legacy_partial_bar")),
+                     "eligible": sig.get("eligible"),
+                     "fundamentals": sig.get("fundamentals")})
 
     # one entry per breakout: a signal counts only once the previous counted
     # signal for the same symbol has resolved (same-day re-entry allowed)
@@ -142,7 +248,27 @@ def main():
             (f"{lo}-{hi}" if hi < 99999 else f"{lo}+"):
             summarize([x for x in rows if lo <= x["age_days"] <= hi])
             for lo, hi in ages},
+        # Growth screen (added 2026-11-27): judged going forward only. Older
+        # signals carry no flag (None) because Yahoo's history is not
+        # point-in-time and cannot be back-tested honestly.
+        "by_growth_screen": {
+            lab: summarize([x for x in rows if x["eligible"] is val])
+            for lab, val in (("eligible", True), ("ineligible", False),
+                             ("not_screened_yet", None))
+            if any(x["eligible"] is val for x in rows)},
     }
+    try:
+        bench = run_benchmark(log, today)
+    except Exception as e:  # never let the benchmark break the ledger
+        bench = {"error": str(e)[:200]}
+    if bench and "eras" in bench:
+        for key, era in bench["eras"].items():
+            era["live_stock_signals"] = summarize(
+                [x for x in rows if x["settings"] == key
+                 and x["asset_class"] == "stock"])
+        summary["benchmark"] = bench
+    elif bench:
+        summary["benchmark"] = bench
     out = {"as_of_utc": now,
            "how_to_read": ("avg_R_incl_open: 1R = distance to the stop; open "
                            "positions marked to last completed close. Compare "
@@ -165,6 +291,18 @@ def main():
     for k, v in summary["by_signal_age_days"].items():
         print(f"  age {k:7s} days    n={v['n']:3d} TP={v['tp']:3d} SL={v['sl']:3d} "
               f"open={v['open']:3d} avgR(incl open)={v['avg_R_incl_open']}")
+    for k, v in summary["by_growth_screen"].items():
+        print(f"  growth screen {k:17s} n={v['n']:3d} TP={v['tp']:3d} "
+              f"SL={v['sl']:3d} open={v['open']:3d} avgR(incl open)={v['avg_R_incl_open']}")
+    bm = summary.get("benchmark") or {}
+    for key, era in (bm.get("eras") or {}).items():
+        print(f"  BENCHMARK {key} {era['window'][0]}..{era['window'][1]} "
+              f"(avgR incl open; live={era['live_stock_signals']['avg_R_incl_open']}):")
+        for g in ("breakout_rule", "uptrend_no_breakout", "any_day"):
+            v = era[g]
+            print(f"     {g:20s} n={v['n']:6d} win%={v['win_pct_of_resolved']} "
+                  f"avgR={v['avg_R_incl_open']}")
+        print(f"     breakout minus any_day = {era['breakout_minus_any_day_R']}R")
 
 
 if __name__ == "__main__":
