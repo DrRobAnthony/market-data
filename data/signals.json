@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-28 11:33:06",
+  "scanned_utc": "2026-11-28 14:16:33",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -25,7 +25,7 @@
       "reward_pct": 9.2,
       "mc30_p5": 109.2202,
       "mc30_p50": 127.4443,
-      "mc30_p95": 148.9765,
+      "mc30_p95": 148.976,
       "symbol": "DIS",
       "asset_class": "stock",
       "fundamentals": "no_data",

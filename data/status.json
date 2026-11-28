@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-28 11:33:06",
+  "updated_utc": "2026-11-28 14:16:33",
   "ok": 178,
   "total": 183,
   "failed": [
@@ -21,8 +21,8 @@
   "fundamentals": {
     "pass": 9,
     "fail": 27,
-    "no_data": 105,
+    "no_data": 109,
     "error": 0,
-    "missing": 4
+    "missing": 0
   }
 }
