@@ -39,6 +39,10 @@ jobs:
       - name: Fetch market data and scan
         run: python fetch_data.py
 
+      - name: Relative-strength pings (paper mode)
+        continue-on-error: true
+        run: python rs_scan.py
+
       - name: Score signal ledger (live record vs backtest)
         continue-on-error: true
         run: python ledger.py

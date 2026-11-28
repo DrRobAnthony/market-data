@@ -1,0 +1,45 @@
+{
+ "open": [
+  {
+   "symbol": "HD",
+   "date": "2026-11-25",
+   "entry": 361.26,
+   "mom126_pct": 14.1,
+   "rank_pct": 80.6,
+   "fundamentals": "unknown",
+   "eligible": true,
+   "status": "open"
+  },
+  {
+   "symbol": "CVX",
+   "date": "2026-11-25",
+   "entry": 210.95,
+   "mom126_pct": 17.2,
+   "rank_pct": 82.6,
+   "fundamentals": "unknown",
+   "eligible": true,
+   "status": "open"
+  },
+  {
+   "symbol": "HPQ",
+   "date": "2026-11-25",
+   "entry": 31.15,
+   "mom126_pct": 27.3,
+   "rank_pct": 91.7,
+   "fundamentals": "unknown",
+   "eligible": true,
+   "status": "open"
+  }
+ ],
+ "closed": [],
+ "summary": {
+  "all": {
+   "n": 0
+  },
+  "eligible_only": {
+   "n": 0
+  },
+  "open_positions": 3,
+  "updated": "2026-11-25"
+ }
+}
