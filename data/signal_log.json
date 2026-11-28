@@ -3339,5 +3339,19 @@
   "atr": 1.761447,
   "rsi": 62.8,
   "first_seen_utc": "2026-11-26 09:32:11"
+ },
+ {
+  "symbol": "DIS",
+  "date": "2026-11-27",
+  "asset_class": "stock",
+  "side": "long",
+  "entry": 127.24,
+  "sl": 122.555113,
+  "tp": 138.952219,
+  "atr": 3.123258,
+  "rsi": 70.9,
+  "first_seen_utc": "2026-11-28 09:08:59",
+  "fundamentals": "no_data",
+  "eligible": false
  }
 ]

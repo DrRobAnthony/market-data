@@ -29,6 +29,16 @@
    "fundamentals": "unknown",
    "eligible": true,
    "status": "open"
+  },
+  {
+   "symbol": "COST",
+   "date": "2026-11-27",
+   "entry": 1097.8101,
+   "mom126_pct": 18.4,
+   "rank_pct": 81.2,
+   "fundamentals": "no_data",
+   "eligible": false,
+   "status": "open"
   }
  ],
  "closed": [],
@@ -39,7 +49,7 @@
   "eligible_only": {
    "n": 0
   },
-  "open_positions": 3,
-  "updated": "2026-11-25"
+  "open_positions": 4,
+  "updated": "2026-11-27"
  }
 }

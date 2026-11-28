@@ -1,5 +1,5 @@
 {
-  "scanned_utc": "2026-11-27 15:00:14",
+  "scanned_utc": "2026-11-28 09:08:59",
   "strategy": "daily trend-breakout v1",
   "params": {
     "ema_fast": 50,
@@ -14,37 +14,27 @@
   "signals": [
     {
       "side": "long",
-      "entry": 125.6,
-      "sl": 120.788967,
-      "tp": 137.627582,
+      "entry": 127.24,
+      "sl": 122.555113,
+      "tp": 138.952219,
       "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-25",
-      "atr": 3.207355,
-      "rsi": 68.9,
-      "risk_pct": 3.83,
-      "reward_pct": 9.58,
-      "mc30_p5": 108.4524,
-      "mc30_p50": 125.9715,
-      "mc30_p95": 148.054,
+      "date": "2026-11-27",
+      "atr": 3.123258,
+      "rsi": 70.9,
+      "risk_pct": 3.68,
+      "reward_pct": 9.2,
+      "mc30_p5": 109.2202,
+      "mc30_p50": 127.4443,
+      "mc30_p95": 148.976,
       "symbol": "DIS",
-      "asset_class": "stock"
-    },
-    {
-      "side": "long",
-      "entry": 95.0,
-      "sl": 92.357829,
-      "tp": 101.605428,
-      "thesis": "Confirmed uptrend (price above 200-day trend line, 50-day above 200-day) and today closed above the prior 55-day high \u2014 a momentum breakout in trend direction.",
-      "date": "2026-11-25",
-      "atr": 1.761447,
-      "rsi": 62.8,
-      "risk_pct": 2.78,
-      "reward_pct": 6.95,
-      "mc30_p5": 86.3454,
-      "mc30_p50": 95.6513,
-      "mc30_p95": 105.7328,
-      "symbol": "SO",
-      "asset_class": "stock"
+      "asset_class": "stock",
+      "fundamentals": "no_data",
+      "eligible": false,
+      "skip_reason": "no company financials available (ETF, fund, or Yahoo has none)",
+      "max_position_pct": 10.0,
+      "position_pct": 10.0,
+      "loss_if_halved_pct": 5.0,
+      "loss_at_stop_pct": 0.37
     }
   ]
 }

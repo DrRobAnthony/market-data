@@ -1,15 +1,15 @@
 {
- "as_of_utc": "2026-11-27 15:00:14",
+ "as_of_utc": "2026-11-28 09:09:02",
  "how_to_read": "avg_R_incl_open: 1R = distance to the stop; open positions marked to last completed close. Compare with backtest_ref.expectancy_R. Gross of costs.",
  "summary": {
   "all_signals": {
-   "n": 276,
+   "n": 277,
    "tp": 33,
    "sl": 228,
-   "open": 15,
+   "open": 16,
    "win_pct_of_resolved": 12.6,
    "avg_R_resolved": -0.56,
-   "avg_R_incl_open": -0.52
+   "avg_R_incl_open": -0.51
   },
   "independent_entries": {
    "n": 137,
@@ -18,7 +18,7 @@
    "open": 10,
    "win_pct_of_resolved": 14.2,
    "avg_R_resolved": -0.5,
-   "avg_R_incl_open": -0.47
+   "avg_R_incl_open": -0.46
   },
   "by_asset_class": {
    "crypto": {
@@ -31,21 +31,21 @@
     "avg_R_incl_open": -0.03
    },
    "stock": {
-    "n": 247,
+    "n": 248,
     "tp": 25,
     "sl": 207,
-    "open": 15,
+    "open": 16,
     "win_pct_of_resolved": 10.8,
     "avg_R_resolved": -0.62,
-    "avg_R_incl_open": -0.57
+    "avg_R_incl_open": -0.56
    }
   },
   "by_settings": {
    "SL1.5xATR/TP3.75xATR": {
-    "n": 220,
+    "n": 221,
     "tp": 28,
     "sl": 181,
-    "open": 11,
+    "open": 12,
     "win_pct_of_resolved": 13.4,
     "avg_R_resolved": -0.53,
     "avg_R_incl_open": -0.48,
@@ -62,7 +62,7 @@
     "open": 4,
     "win_pct_of_resolved": 9.6,
     "avg_R_resolved": -0.66,
-    "avg_R_incl_open": -0.65,
+    "avg_R_incl_open": -0.64,
     "backtest_ref": {
      "win_pct_of_resolved": 38.0,
      "profit_factor": 1.53,
@@ -72,18 +72,18 @@
   },
   "by_signal_age_days": {
    "0-7": {
-    "n": 5,
+    "n": 6,
     "tp": 0,
     "sl": 0,
-    "open": 5,
+    "open": 6,
     "win_pct_of_resolved": null,
     "avg_R_resolved": null,
-    "avg_R_incl_open": -0.15
+    "avg_R_incl_open": -0.02
    },
    "8-14": {
-    "n": 5,
+    "n": 3,
     "tp": 0,
-    "sl": 5,
+    "sl": 3,
     "open": 0,
     "win_pct_of_resolved": 0.0,
     "avg_R_resolved": -1.0,
@@ -96,16 +96,128 @@
     "open": 4,
     "win_pct_of_resolved": 6.9,
     "avg_R_resolved": -0.76,
-    "avg_R_incl_open": -0.66
+    "avg_R_incl_open": -0.65
    },
    "31+": {
-    "n": 204,
+    "n": 206,
     "tp": 29,
-    "sl": 169,
+    "sl": 171,
     "open": 6,
-    "win_pct_of_resolved": 14.6,
+    "win_pct_of_resolved": 14.5,
     "avg_R_resolved": -0.49,
     "avg_R_incl_open": -0.47
+   }
+  },
+  "by_growth_screen": {
+   "ineligible": {
+    "n": 1,
+    "tp": 0,
+    "sl": 0,
+    "open": 1,
+    "win_pct_of_resolved": null,
+    "avg_R_resolved": null,
+    "avg_R_incl_open": 0.0
+   },
+   "not_screened_yet": {
+    "n": 276,
+    "tp": 33,
+    "sl": 228,
+    "open": 15,
+    "win_pct_of_resolved": 12.6,
+    "avg_R_resolved": -0.56,
+    "avg_R_incl_open": -0.51
+   }
+  },
+  "benchmark": {
+   "note": "Stocks only, same dates, same stops, same scoring as the live signals. breakout_rule vs any_day is the test: if the rule does not beat random entries, it has no edge here. Gross of costs; watchlist is today's names (hindsight).",
+   "universe_stocks": 144,
+   "eras": {
+    "SL3.0xATR/TP7.5xATR": {
+     "window": [
+      "2026-08-21",
+      "2026-09-13"
+     ],
+     "live_stock_signals": {
+      "n": 50,
+      "tp": 1,
+      "sl": 45,
+      "open": 4,
+      "win_pct_of_resolved": 2.2,
+      "avg_R_resolved": -0.92,
+      "avg_R_incl_open": -0.87
+     },
+     "breakout_rule": {
+      "n": 50,
+      "tp": 1,
+      "sl": 43,
+      "open": 6,
+      "win_pct_of_resolved": 2.3,
+      "avg_R_resolved": -0.92,
+      "avg_R_incl_open": -0.82
+     },
+     "uptrend_no_breakout": {
+      "n": 1403,
+      "tp": 118,
+      "sl": 1083,
+      "open": 202,
+      "win_pct_of_resolved": 9.8,
+      "avg_R_resolved": -0.66,
+      "avg_R_incl_open": -0.46
+     },
+     "any_day": {
+      "n": 2162,
+      "tp": 240,
+      "sl": 1655,
+      "open": 267,
+      "win_pct_of_resolved": 12.7,
+      "avg_R_resolved": -0.56,
+      "avg_R_incl_open": -0.4
+     },
+     "breakout_minus_any_day_R": -0.42
+    },
+    "SL1.5xATR/TP3.75xATR": {
+     "window": [
+      "2026-09-14",
+      "2026-11-28"
+     ],
+     "live_stock_signals": {
+      "n": 198,
+      "tp": 24,
+      "sl": 162,
+      "open": 12,
+      "win_pct_of_resolved": 12.9,
+      "avg_R_resolved": -0.55,
+      "avg_R_incl_open": -0.49
+     },
+     "breakout_rule": {
+      "n": 201,
+      "tp": 29,
+      "sl": 155,
+      "open": 17,
+      "win_pct_of_resolved": 15.8,
+      "avg_R_resolved": -0.45,
+      "avg_R_incl_open": -0.35
+     },
+     "uptrend_no_breakout": {
+      "n": 4032,
+      "tp": 757,
+      "sl": 2694,
+      "open": 581,
+      "win_pct_of_resolved": 21.9,
+      "avg_R_resolved": -0.23,
+      "avg_R_incl_open": -0.1
+     },
+     "any_day": {
+      "n": 7770,
+      "tp": 1516,
+      "sl": 4982,
+      "open": 1272,
+      "win_pct_of_resolved": 23.3,
+      "avg_R_resolved": -0.18,
+      "avg_R_incl_open": -0.05
+     },
+     "breakout_minus_any_day_R": -0.3
+    }
    }
   }
  },
@@ -119,8 +231,10 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -132,8 +246,10 @@
    "exit_date": "2026-11-25",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -145,8 +261,10 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -158,8 +276,10 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -171,8 +291,10 @@
    "exit_date": "2026-08-26",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -184,8 +306,10 @@
    "exit_date": "2026-10-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 98,
+   "age_days": 99,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -197,8 +321,10 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -210,8 +336,10 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -223,8 +351,10 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -236,8 +366,10 @@
    "exit_date": "2026-09-08",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -249,8 +381,10 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -262,8 +396,10 @@
    "exit_date": "2026-08-26",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -275,8 +411,10 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -288,8 +426,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -301,8 +441,10 @@
    "exit_date": "2026-09-18",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 95,
+   "age_days": 96,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -314,8 +456,10 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -327,8 +471,10 @@
    "exit_date": "2026-09-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -340,8 +486,10 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -353,8 +501,10 @@
    "exit_date": "2026-09-11",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -366,8 +516,10 @@
    "exit_date": "2026-09-01",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -379,8 +531,10 @@
    "exit_date": "2026-10-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -392,8 +546,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 94,
+   "age_days": 95,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -403,10 +559,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.536,
+   "R": -0.309,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 92,
+   "age_days": 93,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -418,8 +576,10 @@
    "exit_date": "2026-09-02",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 92,
+   "age_days": 93,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -431,8 +591,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 92,
+   "age_days": 93,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -444,8 +606,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 92,
+   "age_days": 93,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -455,10 +619,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.653,
+   "R": -0.572,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 91,
+   "age_days": 92,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -470,8 +636,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 91,
+   "age_days": 92,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -481,10 +649,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.587,
+   "R": -0.373,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 88,
+   "age_days": 89,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -496,8 +666,10 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 88,
+   "age_days": 89,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -509,8 +681,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -520,10 +694,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.008,
+   "R": 0.114,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -535,8 +711,10 @@
    "exit_date": "2026-11-20",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -548,8 +726,10 @@
    "exit_date": "2026-11-24",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -561,8 +741,10 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -574,8 +756,10 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 87,
+   "age_days": 88,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -587,8 +771,10 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 86,
+   "age_days": 87,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -600,8 +786,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 86,
+   "age_days": 87,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -613,8 +801,10 @@
    "exit_date": "2026-10-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 86,
+   "age_days": 87,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -626,8 +816,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 86,
+   "age_days": 87,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -639,8 +831,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 86,
+   "age_days": 87,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -652,8 +846,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 85,
+   "age_days": 86,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -665,8 +861,10 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 85,
+   "age_days": 86,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -678,8 +876,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 85,
+   "age_days": 86,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -691,8 +891,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 85,
+   "age_days": 86,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -704,8 +906,10 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 85,
+   "age_days": 86,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -717,8 +921,10 @@
    "exit_date": "2026-09-10",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 84,
+   "age_days": 85,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -730,8 +936,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 84,
+   "age_days": 85,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -743,8 +951,10 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 84,
+   "age_days": 85,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -756,8 +966,10 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 83,
+   "age_days": 84,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -769,8 +981,10 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 82,
+   "age_days": 83,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -782,8 +996,10 @@
    "exit_date": "2026-09-09",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 81,
+   "age_days": 82,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -795,8 +1011,10 @@
    "exit_date": "2026-09-22",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 79,
+   "age_days": 80,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -808,8 +1026,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -821,8 +1041,10 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 77,
+   "age_days": 78,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -834,8 +1056,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL3.0xATR/TP7.5xATR",
-   "age_days": 76,
+   "age_days": 77,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -847,8 +1071,10 @@
    "exit_date": "2026-10-06",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -860,8 +1086,10 @@
    "exit_date": "2026-09-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -873,8 +1101,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -886,8 +1116,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 74,
+   "age_days": 75,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -899,8 +1131,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -912,8 +1146,10 @@
    "exit_date": "2026-10-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -925,8 +1161,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -938,8 +1176,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -951,8 +1191,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -964,8 +1206,10 @@
    "exit_date": "2026-09-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 73,
+   "age_days": 74,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -977,8 +1221,10 @@
    "exit_date": "2026-10-28",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 72,
+   "age_days": 73,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -990,8 +1236,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1003,8 +1251,10 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1016,8 +1266,10 @@
    "exit_date": "2026-09-18",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1029,8 +1281,10 @@
    "exit_date": "2026-11-09",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1042,8 +1296,10 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 71,
+   "age_days": 72,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1055,8 +1311,10 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 70,
+   "age_days": 71,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1068,8 +1326,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 70,
+   "age_days": 71,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1081,8 +1341,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 70,
+   "age_days": 71,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1094,8 +1356,10 @@
    "exit_date": "2026-09-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 69,
+   "age_days": 70,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1107,8 +1371,10 @@
    "exit_date": "2026-09-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 69,
+   "age_days": 70,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1120,8 +1386,10 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1133,8 +1401,10 @@
    "exit_date": "2026-09-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1146,8 +1416,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1159,8 +1431,10 @@
    "exit_date": "2026-10-08",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1172,8 +1446,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1185,8 +1461,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1198,8 +1476,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1211,8 +1491,10 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1224,8 +1506,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 67,
+   "age_days": 68,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1237,8 +1521,10 @@
    "exit_date": "2026-09-26",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 66,
+   "age_days": 67,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1250,8 +1536,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1263,8 +1551,10 @@
    "exit_date": "2026-09-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1276,8 +1566,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1289,8 +1581,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1302,8 +1596,10 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1315,8 +1611,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1328,8 +1626,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1341,8 +1641,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1354,8 +1656,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 65,
+   "age_days": 66,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1367,8 +1671,10 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1380,8 +1686,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1393,8 +1701,10 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1406,8 +1716,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 64,
+   "age_days": 65,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1419,8 +1731,10 @@
    "exit_date": "2026-10-10",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1432,8 +1746,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1445,8 +1761,10 @@
    "exit_date": "2026-09-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1458,8 +1776,10 @@
    "exit_date": "2026-09-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 63,
+   "age_days": 64,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1471,8 +1791,10 @@
    "exit_date": "2026-10-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 62,
+   "age_days": 63,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1484,8 +1806,10 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 61,
+   "age_days": 62,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1497,8 +1821,10 @@
    "exit_date": "2026-10-01",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 60,
+   "age_days": 61,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1510,8 +1836,10 @@
    "exit_date": "2026-09-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 59,
+   "age_days": 60,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1523,8 +1851,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 57,
+   "age_days": 58,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1536,8 +1866,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1549,8 +1881,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1562,8 +1896,10 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1575,8 +1911,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1588,8 +1926,10 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 56,
+   "age_days": 57,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1601,8 +1941,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1614,8 +1956,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1627,8 +1971,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1640,8 +1986,10 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1653,8 +2001,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 53,
+   "age_days": 54,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1666,8 +2016,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1679,8 +2031,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1692,8 +2046,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1705,8 +2061,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1718,8 +2076,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1731,8 +2091,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1744,8 +2106,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1757,8 +2121,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1770,8 +2136,10 @@
    "exit_date": "2026-10-07",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1783,8 +2151,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 52,
+   "age_days": 53,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1796,8 +2166,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 51,
+   "age_days": 52,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1809,8 +2181,10 @@
    "exit_date": "2026-10-08",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1822,8 +2196,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 50,
+   "age_days": 51,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1835,8 +2211,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1848,8 +2226,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1861,8 +2241,10 @@
    "exit_date": "2026-10-14",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1874,8 +2256,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1887,8 +2271,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1900,8 +2286,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 49,
+   "age_days": 50,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1913,8 +2301,10 @@
    "exit_date": "2026-10-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 47,
+   "age_days": 48,
    "legacy_partial_bar": true,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1926,8 +2316,10 @@
    "exit_date": "2026-10-13",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1939,8 +2331,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1952,8 +2346,10 @@
    "exit_date": "2026-10-15",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -1965,8 +2361,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1978,8 +2376,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -1991,8 +2391,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 46,
+   "age_days": 47,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2004,8 +2406,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2017,8 +2421,10 @@
    "exit_date": "2026-10-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2030,8 +2436,10 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2043,8 +2451,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2056,8 +2466,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 45,
+   "age_days": 46,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2067,10 +2479,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.134,
+   "R": 0.866,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2082,8 +2496,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2095,8 +2511,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2108,8 +2526,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2121,8 +2541,10 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2134,8 +2556,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2147,8 +2571,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 44,
+   "age_days": 45,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2160,8 +2586,10 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2173,8 +2601,10 @@
    "exit_date": "2026-10-30",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2186,8 +2616,10 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2199,8 +2631,10 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2212,8 +2646,10 @@
    "exit_date": "2026-11-02",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2225,8 +2661,10 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2238,8 +2676,10 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2251,8 +2691,10 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2264,8 +2706,10 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 43,
+   "age_days": 44,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2277,8 +2721,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2290,8 +2736,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2303,8 +2751,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2316,8 +2766,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2329,8 +2781,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 42,
+   "age_days": 43,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2342,8 +2796,10 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 39,
+   "age_days": 40,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2355,8 +2811,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2368,8 +2826,10 @@
    "exit_date": "2026-10-27",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2381,8 +2841,10 @@
    "exit_date": "2026-10-21",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2394,8 +2856,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2407,8 +2871,10 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 38,
+   "age_days": 39,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2420,8 +2886,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 37,
+   "age_days": 38,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2433,8 +2901,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2444,10 +2914,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.36,
+   "R": 1.659,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2459,8 +2931,10 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2472,8 +2946,10 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2485,8 +2961,10 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2498,8 +2976,10 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2511,8 +2991,10 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2524,8 +3006,10 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2537,8 +3021,10 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2550,8 +3036,10 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2563,8 +3051,10 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2576,8 +3066,10 @@
    "exit_date": "2026-10-23",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2589,8 +3081,10 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2602,8 +3096,10 @@
    "exit_date": "2026-10-26",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2615,8 +3111,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 36,
+   "age_days": 37,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2628,8 +3126,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2641,8 +3141,10 @@
    "exit_date": "2026-10-27",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2654,8 +3156,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2667,8 +3171,10 @@
    "exit_date": "2026-10-28",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2680,8 +3186,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2693,8 +3201,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2706,8 +3216,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2719,8 +3231,10 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 35,
+   "age_days": 36,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2732,8 +3246,10 @@
    "exit_date": "2026-10-27",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2745,8 +3261,10 @@
    "exit_date": "2026-10-29",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 32,
+   "age_days": 33,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2758,8 +3276,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 31,
+   "age_days": 32,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2771,8 +3291,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 30,
+   "age_days": 31,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2784,8 +3306,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 30,
+   "age_days": 31,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2797,8 +3321,10 @@
    "exit_date": "2026-11-18",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2808,10 +3334,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 1.832,
+   "R": 1.875,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2821,10 +3349,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.29,
+   "R": 0.293,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2836,8 +3366,10 @@
    "exit_date": "2026-11-04",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2849,8 +3381,10 @@
    "exit_date": "2026-11-05",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2862,8 +3396,10 @@
    "exit_date": "2026-11-04",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2875,8 +3411,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2888,8 +3426,10 @@
    "exit_date": "2026-10-30",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 29,
+   "age_days": 30,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2901,8 +3441,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -2914,8 +3456,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2927,8 +3471,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2940,8 +3486,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2951,10 +3499,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.902,
+   "R": 0.941,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2966,8 +3516,10 @@
    "exit_date": "2026-11-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2979,8 +3531,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -2992,8 +3546,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3005,8 +3561,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3018,8 +3576,10 @@
    "exit_date": "2026-11-25",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3031,8 +3591,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3044,8 +3606,10 @@
    "exit_date": "2026-11-02",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 28,
+   "age_days": 29,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3057,8 +3621,10 @@
    "exit_date": "2026-11-03",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3070,8 +3636,10 @@
    "exit_date": "2026-11-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3083,8 +3651,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3096,8 +3666,10 @@
    "exit_date": "2026-11-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3109,8 +3681,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3120,10 +3694,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.036,
+   "R": 0.32,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3135,8 +3711,10 @@
    "exit_date": "2026-11-24",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3148,8 +3726,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3161,8 +3741,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3174,8 +3756,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 25,
+   "age_days": 26,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3187,8 +3771,10 @@
    "exit_date": "2026-11-17",
    "R": 2.5,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3200,8 +3786,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 24,
+   "age_days": 25,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3213,8 +3801,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3226,8 +3816,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3239,8 +3831,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3252,8 +3846,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3265,8 +3861,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3278,8 +3876,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3291,8 +3891,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3304,8 +3906,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3317,8 +3921,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3330,8 +3936,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3343,8 +3951,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3356,8 +3966,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3369,8 +3981,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3382,8 +3996,10 @@
    "exit_date": "2026-11-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3395,8 +4011,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3408,8 +4026,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3421,8 +4041,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3434,8 +4056,10 @@
    "exit_date": "2026-11-05",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 23,
+   "age_days": 24,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3447,8 +4071,10 @@
    "exit_date": "2026-11-06",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 22,
+   "age_days": 23,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3460,8 +4086,10 @@
    "exit_date": "2026-11-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3473,8 +4101,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3486,8 +4116,10 @@
    "exit_date": "2026-11-17",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3499,8 +4131,10 @@
    "exit_date": "2026-11-12",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 18,
+   "age_days": 19,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3512,8 +4146,10 @@
    "exit_date": "2026-11-20",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3525,8 +4161,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3538,8 +4176,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 16,
+   "age_days": 17,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3551,8 +4191,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3564,8 +4206,10 @@
    "exit_date": "2026-11-18",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 15,
+   "age_days": 16,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3577,8 +4221,10 @@
    "exit_date": "2026-11-16",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3590,8 +4236,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 14,
+   "age_days": 15,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3603,8 +4251,10 @@
    "exit_date": "2026-11-17",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3616,8 +4266,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3629,8 +4281,10 @@
    "exit_date": "2026-11-19",
    "R": -1.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 11,
+   "age_days": 12,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3640,10 +4294,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.211,
+   "R": -0.176,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3653,10 +4309,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.45,
+   "R": -0.48,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3666,10 +4324,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": -0.083,
+   "R": 0.184,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 3,
+   "age_days": 4,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": false
   },
   {
@@ -3679,10 +4339,12 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
-   "R": 0.0,
+   "R": 0.341,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 3,
    "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
    "independent": true
   },
   {
@@ -3692,11 +4354,28 @@
    "side": "long",
    "result": "OPEN",
    "exit_date": null,
+   "R": 0.015,
+   "settings": "SL1.5xATR/TP3.75xATR",
+   "age_days": 3,
+   "legacy_partial_bar": false,
+   "eligible": null,
+   "fundamentals": null,
+   "independent": true
+  },
+  {
+   "symbol": "DIS",
+   "date": "2026-11-27",
+   "asset_class": "stock",
+   "side": "long",
+   "result": "OPEN",
+   "exit_date": null,
    "R": 0.0,
    "settings": "SL1.5xATR/TP3.75xATR",
-   "age_days": 2,
+   "age_days": 1,
    "legacy_partial_bar": false,
-   "independent": true
+   "eligible": false,
+   "fundamentals": "no_data",
+   "independent": false
   }
  ]
 }
