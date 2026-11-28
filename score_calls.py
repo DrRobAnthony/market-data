@@ -27,30 +27,55 @@ def get(url):
         return json.load(r)
 
 
+def bars_binance(sym, start, end):
+    rows = {}
+    t0 = start
+    while t0 < end:
+        q = urllib.parse.urlencode({"symbol": f"{sym}USDT", "interval": "1h", "startTime": t0 * 1000,
+                                    "endTime": end * 1000, "limit": 1000})
+        data = get("https://data-api.binance.vision/api/v3/klines?" + q)
+        if not data:
+            break
+        for c in data:
+            ts = int(c[0]) // 1000
+            rows[ts] = {"t": ts, "o": float(c[1]), "h": float(c[2]), "l": float(c[3]), "c": float(c[4])}
+        t0 = int(data[-1][0]) // 1000 + H
+        time.sleep(0.1)
+    return rows
+
+
+def bars_gate(sym, start, end):
+    rows = {}
+    t0 = start
+    while t0 < end:
+        t1 = min(end, t0 + 900 * H)
+        q = urllib.parse.urlencode({"currency_pair": f"{sym}_USDT", "interval": "1h", "from": t0, "to": t1})
+        for c in get("https://api.gateio.ws/api/v4/spot/candlesticks?" + q):
+            ts = int(c[0]); rows[ts] = {"t": ts, "o": float(c[5]), "h": float(c[3]),
+                                        "l": float(c[4]), "c": float(c[2])}
+        t0 = t1
+        time.sleep(0.15)
+    return rows
+
+
 def bars(sym, end_ts, n=None):
-    """Hourly candles from Gate.io's public API (no key, works from GitHub), 45 days ending at end_ts."""
+    """Hourly candles, 45 days ending at end_ts. Binance public mirror first (deep history), Gate.io fallback."""
     mult = 1
     if sym.startswith("1000") and len(sym) > 4:
         sym, mult = sym[4:], 1000
     start = end_ts - 45 * 24 * H
     rows = {}
-    t0 = start
-    try:
-        while t0 < end_ts:
-            t1 = min(end_ts, t0 + 900 * H)
-            q = urllib.parse.urlencode({"currency_pair": f"{sym}_USDT", "interval": "1h",
-                                        "from": t0, "to": t1})
-            data = get("https://api.gateio.ws/api/v4/spot/candlesticks?" + q)
-            for c in data:
-                ts = int(c[0]); rows[ts] = {"t": ts, "o": float(c[5])*mult, "h": float(c[3])*mult,
-                                            "l": float(c[4])*mult, "c": float(c[2])*mult}
-            t0 = t1
-            time.sleep(0.15)
-    except Exception as e:
-        print("fetch error", sym, e, file=sys.stderr)
-        return None
+    for name, fn in (("binance", bars_binance), ("gate", bars_gate)):
+        try:
+            rows = fn(sym, start, end_ts)
+            if len(rows) > 24:
+                break
+        except Exception as e:
+            print("fetch error", name, sym, e, file=sys.stderr)
     out = [rows[k] for k in sorted(rows) if rows[k]["c"] > 0]
-    return out if len(out) > 24 else None
+    if len(out) <= 24:
+        return None
+    return [{"t": b["t"], "o": b["o"]*mult, "h": b["h"]*mult, "l": b["l"]*mult, "c": b["c"]*mult} for b in out]
 
 
 def run_trade(B, i0, side, entry, stop):
