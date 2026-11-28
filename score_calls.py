@@ -22,8 +22,9 @@ random.seed(7)
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={"Authorization": f"Apikey {KEY}"} if KEY else {})
-    with urllib.request.urlopen(req, timeout=30) as r:
+    if KEY:
+        url += "&api_key=" + KEY
+    with urllib.request.urlopen(url, timeout=30) as r:
         return json.load(r)
 
 
